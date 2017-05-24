@@ -16,3 +16,4 @@ hs_err_pid*
 
 out/
 .DS_Store
+:Library:Java:JavaVirtualMachines:jdk1.8.0_131.jdk

@@ -1,7 +1,9 @@
 import groovy.json.JsonSlurper
 
 def logFile = '20x2.json'
-def baseDir = "/Users/sodino/TLS/"
+def baseDir = "./../res/"
+
+
 
 
 
@@ -31,4 +33,3 @@ def inputJson = new JsonSlurper().parseText(fixJsonFile.text)
 
 dispatcher.calculate()
 
-println "End -----"
