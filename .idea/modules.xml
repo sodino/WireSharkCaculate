@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JsonCaculate_boring_oom_and_giveup/JsonCaculate_boring_oom_and_giveup.iml" filepath="$PROJECT_DIR$/JsonCaculate_boring_oom_and_giveup/JsonCaculate_boring_oom_and_giveup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TextCaculate/TextCaculate.iml" filepath="$PROJECT_DIR$/TextCaculate/TextCaculate.iml" />
       <module fileurl="file://$PROJECT_DIR$/WireSharkCaculate.iml" filepath="$PROJECT_DIR$/WireSharkCaculate.iml" />
     </modules>
   </component>

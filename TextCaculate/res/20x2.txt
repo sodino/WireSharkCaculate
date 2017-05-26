@@ -1,0 +1,954 @@
+No.     Time           Source                Destination           Protocol Info
+      1 0.000000       172.17.32.142         27.148.145.195        TCP      56063 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663685980 TSecr=0 SACK_PERM=1
+      2 0.015949       27.148.145.195        172.17.32.142         TCP      https(443) → 56063 [SYN, ACK] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+      3 0.016031       172.17.32.142         27.148.145.195        TCP      56063 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+      4 0.018201       172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+      5 0.030358       27.148.145.195        172.17.32.142         TLSv1.2  Server Hello
+      6 0.030667       27.148.145.195        172.17.32.142         TCP      [TCP segment of a reassembled PDU]
+      7 0.030749       172.17.32.142         27.148.145.195        TCP      56063 → https(443) [ACK] Seq=518 Ack=2921 Win=260672 Len=0
+      8 0.032047       27.148.145.195        172.17.32.142         TLSv1.2  Certificate[TCP segment of a reassembled PDU]
+      9 0.032225       172.17.32.142         27.148.145.195        TCP      56063 → https(443) [ACK] Seq=518 Ack=4097 Win=260960 Len=0
+     10 0.034284       27.148.145.195        172.17.32.142         TCP      https(443) → 56063 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+     11 0.034354       172.17.32.142         27.148.145.195        TCP      [TCP Window Update] 56063 → https(443) [ACK] Seq=518 Ack=4097 Win=262144 Len=0
+     12 0.035291       27.148.145.195        172.17.32.142         TLSv1.2  Certificate Status, Server Key Exchange, Server Hello Done
+     13 0.035346       172.17.32.142         27.148.145.195        TCP      56063 → https(443) [ACK] Seq=518 Ack=4746 Win=261472 Len=0
+     14 0.115794       172.17.32.142         27.148.145.195        TLSv1.2  Client Key Exchange, Change Cipher Spec, Hello Request, Hello Request
+     15 0.132842       27.148.145.195        172.17.32.142         TLSv1.2  New Session Ticket, Change Cipher Spec, Encrypted Handshake Message
+     16 0.132906       172.17.32.142         27.148.145.195        TCP      56063 → https(443) [ACK] Seq=644 Ack=4988 Win=261888 Len=0
+     17 0.141036       172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+     18 0.196604       172.17.32.142         27.148.145.195        TCP      [TCP Retransmission] 56063 → https(443) [PSH, ACK] Seq=644 Ack=4988 Win=262144 Len=142
+     19 0.202050       27.148.145.195        172.17.32.142         TCP      https(443) → 56063 [ACK] Seq=4988 Ack=786 Win=16768 Len=0
+     20 0.214147       27.148.145.195        172.17.32.142         TCP      [TCP Dup ACK 19#1] https(443) → 56063 [ACK] Seq=4988 Ack=786 Win=16768 Len=0 SLE=644 SRE=786
+     21 0.323425       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+     22 0.323475       172.17.32.142         27.148.145.195        TCP      56063 → https(443) [ACK] Seq=786 Ack=5361 Win=261760 Len=0
+     23 0.325017       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+     24 0.325065       172.17.32.142         27.148.145.195        TCP      56063 → https(443) [ACK] Seq=786 Ack=5462 Win=262016 Len=0
+     25 0.325409       27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+     26 0.325446       172.17.32.142         27.148.145.195        TCP      56063 → https(443) [ACK] Seq=786 Ack=5493 Win=262112 Len=0
+     27 0.326727       27.148.145.195        172.17.32.142         TCP      https(443) → 56063 [FIN, ACK] Seq=5493 Ack=786 Win=16768 Len=0
+     28 0.326790       172.17.32.142         27.148.145.195        TCP      56063 → https(443) [ACK] Seq=786 Ack=5494 Win=262144 Len=0
+     29 0.333642       172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+     30 0.334014       172.17.32.142         27.148.145.195        TCP      56063 → https(443) [FIN, ACK] Seq=817 Ack=5494 Win=262144 Len=0
+     31 0.346654       27.148.145.195        172.17.32.142         TCP      https(443) → 56063 [RST] Seq=5494 Win=0 Len=0
+     32 0.347371       27.148.145.195        172.17.32.142         TCP      https(443) → 56063 [RST] Seq=5494 Win=0 Len=0
+     33 0.639470       172.17.32.142         106.122.254.22        TCP      56064 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663686610 TSecr=0 SACK_PERM=1
+     34 0.655056       106.122.254.22        172.17.32.142         TCP      https(443) → 56064 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+     35 0.655156       172.17.32.142         106.122.254.22        TCP      56064 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+     36 0.657191       172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+     37 0.671151       106.122.254.22        172.17.32.142         TCP      https(443) → 56064 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+     38 0.672589       106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+     39 0.672661       172.17.32.142         106.122.254.22        TCP      56064 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+     40 0.673784       172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+     41 0.728801       106.122.254.22        172.17.32.142         TCP      https(443) → 56064 [ACK] Seq=138 Ack=569 Win=176768 Len=0
+     42 0.728879       172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+     43 0.745159       106.122.254.22        172.17.32.142         TCP      https(443) → 56064 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+     44 0.782405       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+     45 0.782450       172.17.32.142         106.122.254.22        TCP      56064 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+     46 0.782797       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+     47 0.782838       172.17.32.142         106.122.254.22        TCP      56064 → https(443) [ACK] Seq=711 Ack=613 Win=262016 Len=0
+     48 0.783536       106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+     49 0.783590       172.17.32.142         106.122.254.22        TCP      56064 → https(443) [ACK] Seq=711 Ack=644 Win=262112 Len=0
+     50 0.784682       106.122.254.22        172.17.32.142         TCP      https(443) → 56064 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+     51 0.784744       172.17.32.142         106.122.254.22        TCP      56064 → https(443) [ACK] Seq=711 Ack=645 Win=262144 Len=0
+     52 0.788520       172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+     53 0.788842       172.17.32.142         106.122.254.22        TCP      56064 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+     54 0.805809       106.122.254.22        172.17.32.142         TCP      https(443) → 56064 [RST] Seq=645 Win=0 Len=0
+     55 0.807666       106.122.254.22        172.17.32.142         TCP      https(443) → 56064 [RST] Seq=645 Win=0 Len=0
+     56 1.092885       172.17.32.142         27.148.145.195        TCP      56065 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663687056 TSecr=0 SACK_PERM=1
+     57 1.105713       27.148.145.195        172.17.32.142         TCP      https(443) → 56065 [SYN, ACK] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+     58 1.105777       172.17.32.142         27.148.145.195        TCP      56065 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+     59 1.107499       172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+     60 1.123567       27.148.145.195        172.17.32.142         TCP      https(443) → 56065 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+     61 1.130913       27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+     62 1.131148       172.17.32.142         27.148.145.195        TCP      56065 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+     63 1.133669       172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+     64 1.141534       27.148.145.195        172.17.32.142         TLSv1.2  [TCP Spurious Retransmission] , Server Hello, Change Cipher Spec, Encrypted Handshake Message
+     65 1.141806       172.17.32.142         27.148.145.195        TCP      [TCP Dup ACK 62#1] 56065 → https(443) [ACK] Seq=569 Ack=142 Win=262144 Len=0 SLE=1 SRE=142
+     66 1.188493       27.148.145.195        172.17.32.142         TCP      https(443) → 56065 [ACK] Seq=142 Ack=569 Win=15744 Len=0
+     67 1.188612       172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+     68 1.207729       27.148.145.195        172.17.32.142         TCP      https(443) → 56065 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+     69 1.240776       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+     70 1.240844       172.17.32.142         27.148.145.195        TCP      56065 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+     71 1.241208       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+     72 1.241244       172.17.32.142         27.148.145.195        TCP      56065 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+     73 1.242978       27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+     74 1.243031       172.17.32.142         27.148.145.195        TCP      56065 → https(443) [ACK] Seq=711 Ack=647 Win=262112 Len=0
+     75 1.243896       27.148.145.195        172.17.32.142         TCP      https(443) → 56065 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+     76 1.243948       172.17.32.142         27.148.145.195        TCP      56065 → https(443) [ACK] Seq=711 Ack=648 Win=262144 Len=0
+     77 1.246919       172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+     78 1.247305       172.17.32.142         27.148.145.195        TCP      56065 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+     79 1.259116       27.148.145.195        172.17.32.142         TCP      https(443) → 56065 [RST] Seq=648 Win=0 Len=0
+     80 1.260211       27.148.145.195        172.17.32.142         TCP      https(443) → 56065 [RST] Seq=648 Win=0 Len=0
+     81 1.556828       172.17.32.142         106.122.254.22        TCP      56066 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663687508 TSecr=0 SACK_PERM=1
+     82 1.573379       106.122.254.22        172.17.32.142         TCP      https(443) → 56066 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+     83 1.573461       172.17.32.142         106.122.254.22        TCP      56066 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+     84 1.577545       172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+     85 1.592526       106.122.254.22        172.17.32.142         TCP      https(443) → 56066 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+     86 1.600851       106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+     87 1.600909       172.17.32.142         106.122.254.22        TCP      56066 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+     88 1.601740       172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+     89 1.614990       106.122.254.22        172.17.32.142         TLSv1.2  [TCP Spurious Retransmission] , Server Hello, Change Cipher Spec, Encrypted Handshake Message
+     90 1.615037       172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+     91 1.645000       106.122.254.22        172.17.32.142         TCP      https(443) → 56066 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+     92 1.679523       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+     93 1.679615       172.17.32.142         106.122.254.22        TCP      56066 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+     94 1.680139       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+     95 1.680209       172.17.32.142         106.122.254.22        TCP      56066 → https(443) [ACK] Seq=711 Ack=613 Win=262016 Len=0
+     96 1.681261       106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+     97 1.681356       172.17.32.142         106.122.254.22        TCP      56066 → https(443) [ACK] Seq=711 Ack=644 Win=262112 Len=0
+     98 1.682515       106.122.254.22        172.17.32.142         TCP      https(443) → 56066 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+     99 1.682578       172.17.32.142         106.122.254.22        TCP      56066 → https(443) [ACK] Seq=711 Ack=645 Win=262144 Len=0
+    100 1.689041       172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    101 1.689776       172.17.32.142         106.122.254.22        TCP      56066 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+    102 1.698283       106.122.254.22        172.17.32.142         TCP      https(443) → 56066 [RST] Seq=645 Win=0 Len=0
+    103 1.705845       106.122.254.22        172.17.32.142         TCP      https(443) → 56066 [RST] Seq=645 Win=0 Len=0
+    104 1.994112       172.17.32.142         27.148.145.195        TCP      56068 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663687936 TSecr=0 SACK_PERM=1
+    105 2.007757       27.148.145.195        172.17.32.142         TCP      https(443) → 56068 [SYN, ACK] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    106 2.007855       172.17.32.142         27.148.145.195        TCP      56068 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    107 2.011103       172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+    108 2.023242       27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    109 2.023625       172.17.32.142         27.148.145.195        TCP      56068 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+    110 2.026029       27.148.145.195        172.17.32.142         TCP      https(443) → 56068 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+    111 2.026206       172.17.32.142         27.148.145.195        TCP      [TCP Window Update] 56068 → https(443) [ACK] Seq=518 Ack=142 Win=262144 Len=0
+    112 2.028407       172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    113 2.083489       27.148.145.195        172.17.32.142         TCP      https(443) → 56068 [ACK] Seq=142 Ack=569 Win=15744 Len=0
+    114 2.083539       172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+    115 2.100148       27.148.145.195        172.17.32.142         TCP      https(443) → 56068 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+    116 2.141593       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    117 2.141682       172.17.32.142         27.148.145.195        TCP      56068 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+    118 2.145230       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    119 2.145295       172.17.32.142         27.148.145.195        TCP      56068 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+    120 2.148158       27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+    121 2.148206       172.17.32.142         27.148.145.195        TCP      56068 → https(443) [ACK] Seq=711 Ack=647 Win=262112 Len=0
+    122 2.149133       172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+    123 2.149355       172.17.32.142         27.148.145.195        TCP      56068 → https(443) [FIN, ACK] Seq=742 Ack=647 Win=262144 Len=0
+    124 2.151521       27.148.145.195        172.17.32.142         TCP      https(443) → 56068 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+    125 2.151575       172.17.32.142         27.148.145.195        TCP      [TCP Out-Of-Order] 56068 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+    126 2.166674       27.148.145.195        172.17.32.142         TCP      https(443) → 56068 [RST] Seq=647 Win=0 Len=0
+    127 2.383453       172.17.32.142         27.148.145.195        TCP      [TCP Retransmission] 56068 → https(443) [FIN, PSH, ACK] Seq=711 Ack=648 Win=262144 Len=31
+    128 2.400315       27.148.145.195        172.17.32.142         TCP      https(443) → 56068 [RST] Seq=648 Win=0 Len=0
+    129 2.454796       172.17.32.142         106.122.254.22        TCP      56069 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663688384 TSecr=0 SACK_PERM=1
+    130 2.471113       106.122.254.22        172.17.32.142         TCP      https(443) → 56069 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    131 2.471199       172.17.32.142         106.122.254.22        TCP      56069 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    132 2.473782       172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+    133 2.546434       172.17.32.142         106.122.254.22        TCP      [TCP Retransmission] 56069 → https(443) [PSH, ACK] Seq=1 Ack=1 Win=262144 Len=517
+    134 2.559593       106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    135 2.559655       172.17.32.142         106.122.254.22        TCP      56069 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+    136 2.560871       106.122.254.22        172.17.32.142         TCP      https(443) → 56069 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+    137 2.560887       172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    138 2.560931       172.17.32.142         106.122.254.22        TCP      [TCP Dup ACK 135#1] 56069 → https(443) [ACK] Seq=569 Ack=138 Win=262144 Len=0
+    139 2.622822       106.122.254.22        172.17.32.142         TCP      https(443) → 56069 [ACK] Seq=138 Ack=569 Win=176768 Len=0
+    140 2.622873       172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+    141 2.638161       106.122.254.22        172.17.32.142         TCP      https(443) → 56069 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+    142 2.677731       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    143 2.677809       172.17.32.142         106.122.254.22        TCP      56069 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+    144 2.679344       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    145 2.679398       172.17.32.142         106.122.254.22        TCP      56069 → https(443) [ACK] Seq=711 Ack=613 Win=262016 Len=0
+    146 2.679514       106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+    147 2.679543       172.17.32.142         106.122.254.22        TCP      56069 → https(443) [ACK] Seq=711 Ack=644 Win=262112 Len=0
+    148 2.683134       106.122.254.22        172.17.32.142         TCP      https(443) → 56069 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+    149 2.683185       172.17.32.142         106.122.254.22        TCP      56069 → https(443) [ACK] Seq=711 Ack=645 Win=262144 Len=0
+    150 2.683862       172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    151 2.684437       172.17.32.142         106.122.254.22        TCP      56069 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+    152 2.700980       106.122.254.22        172.17.32.142         TCP      https(443) → 56069 [RST] Seq=645 Win=0 Len=0
+    153 2.702285       106.122.254.22        172.17.32.142         TCP      https(443) → 56069 [RST] Seq=645 Win=0 Len=0
+    154 2.989167       172.17.32.142         27.148.145.195        TCP      56082 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663688906 TSecr=0 SACK_PERM=1
+    155 3.006483       27.148.145.195        172.17.32.142         TCP      https(443) → 56082 [SYN, ACK] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    156 3.006562       172.17.32.142         27.148.145.195        TCP      56082 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    157 3.014341       172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+    158 3.031139       27.148.145.195        172.17.32.142         TCP      https(443) → 56082 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+    159 3.032261       27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    160 3.032320       172.17.32.142         27.148.145.195        TCP      56082 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+    161 3.033601       172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    162 3.089408       27.148.145.195        172.17.32.142         TCP      https(443) → 56082 [ACK] Seq=142 Ack=569 Win=15744 Len=0
+    163 3.089485       172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+    164 3.109881       27.148.145.195        172.17.32.142         TCP      https(443) → 56082 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+    165 3.146936       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    166 3.146986       172.17.32.142         27.148.145.195        TCP      56082 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+    167 3.147310       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    168 3.147344       172.17.32.142         27.148.145.195        TCP      56082 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+    169 3.152017       172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+    170 3.152522       172.17.32.142         27.148.145.195        TCP      56082 → https(443) [FIN, ACK] Seq=742 Ack=616 Win=262144 Len=0
+    171 3.152627       27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+    172 3.152683       172.17.32.142         27.148.145.195        TCP      [TCP Out-Of-Order] 56082 → https(443) [FIN, ACK] Seq=742 Ack=647 Win=262112 Len=0
+    173 3.154228       27.148.145.195        172.17.32.142         TCP      https(443) → 56082 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+    174 3.154279       172.17.32.142         27.148.145.195        TCP      [TCP Out-Of-Order] 56082 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+    175 3.163726       27.148.145.195        172.17.32.142         TCP      https(443) → 56082 [RST] Seq=616 Win=0 Len=0
+    176 3.170969       27.148.145.195        172.17.32.142         TCP      https(443) → 56082 [RST] Seq=616 Win=0 Len=0
+    177 3.172038       27.148.145.195        172.17.32.142         TCP      https(443) → 56082 [RST] Seq=647 Win=0 Len=0
+    178 3.174383       27.148.145.195        172.17.32.142         TCP      https(443) → 56082 [RST] Seq=648 Win=0 Len=0
+    179 3.459614       172.17.32.142         106.122.254.22        TCP      56083 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663689368 TSecr=0 SACK_PERM=1
+    180 3.477607       106.122.254.22        172.17.32.142         TCP      https(443) → 56083 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    181 3.477714       172.17.32.142         106.122.254.22        TCP      56083 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    182 3.480204       172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+    183 3.491092       106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    184 3.491173       172.17.32.142         106.122.254.22        TCP      56083 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+    185 3.492097       172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    186 3.499253       106.122.254.22        172.17.32.142         TCP      https(443) → 56083 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+    187 3.499310       172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+    188 3.515559       106.122.254.22        172.17.32.142         TCP      https(443) → 56083 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+    189 3.557445       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    190 3.557505       172.17.32.142         106.122.254.22        TCP      56083 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+    191 3.558839       106.122.254.22        172.17.32.142         TLSv1.2  [TCP Previous segment not captured] , Encrypted Alert
+    192 3.558921       172.17.32.142         106.122.254.22        TCP      [TCP Dup ACK 190#1] 56083 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0 SLE=613 SRE=644
+    193 3.562452       106.122.254.22        172.17.32.142         TCP      [TCP Out-Of-Order] https(443) → 56083 [PSH, ACK] Seq=512 Ack=711 Win=182528 Len=101
+    194 3.562543       172.17.32.142         106.122.254.22        TCP      56083 → https(443) [ACK] Seq=711 Ack=644 Win=261984 Len=0
+    195 3.563119       106.122.254.22        172.17.32.142         TCP      https(443) → 56083 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+    196 3.563236       172.17.32.142         106.122.254.22        TCP      56083 → https(443) [ACK] Seq=711 Ack=645 Win=261984 Len=0
+    197 3.575301       106.122.254.22        172.17.32.142         TCP      [TCP Out-Of-Order] https(443) → 56083 [PSH, ACK] Seq=512 Ack=711 Win=182528 Len=101
+    198 3.575369       172.17.32.142         106.122.254.22        TCP      [TCP Window Update] 56083 → https(443) [ACK] Seq=711 Ack=645 Win=262144 Len=0 SLE=512 SRE=613
+    199 3.628740       172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    200 3.629221       172.17.32.142         106.122.254.22        TCP      56083 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+    201 3.639324       106.122.254.22        172.17.32.142         TCP      https(443) → 56083 [RST] Seq=645 Win=0 Len=0
+    202 3.641281       106.122.254.22        172.17.32.142         TCP      https(443) → 56083 [RST] Seq=645 Win=0 Len=0
+    203 3.934902       172.17.32.142         27.148.145.195        TCP      56084 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663689833 TSecr=0 SACK_PERM=1
+    204 3.951428       27.148.145.195        172.17.32.142         TCP      https(443) → 56084 [SYN, ACK] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    205 3.951522       172.17.32.142         27.148.145.195        TCP      56084 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    206 3.954955       172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+    207 3.964615       27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    208 3.964686       172.17.32.142         27.148.145.195        TCP      56084 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+    209 3.965500       172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    210 3.972985       27.148.145.195        172.17.32.142         TCP      https(443) → 56084 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+    211 3.973027       172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+    212 3.994536       27.148.145.195        172.17.32.142         TCP      https(443) → 56084 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+    213 4.027594       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    214 4.027662       172.17.32.142         27.148.145.195        TCP      56084 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+    215 4.028836       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    216 4.029074       172.17.32.142         27.148.145.195        TCP      56084 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+    217 4.029260       27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+    218 4.029345       172.17.32.142         27.148.145.195        TCP      56084 → https(443) [ACK] Seq=711 Ack=647 Win=261984 Len=0
+    219 4.031052       27.148.145.195        172.17.32.142         TCP      https(443) → 56084 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+    220 4.031221       172.17.32.142         27.148.145.195        TCP      56084 → https(443) [ACK] Seq=711 Ack=648 Win=262144 Len=0
+    221 4.053288       172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+    222 4.056151       172.17.32.142         27.148.145.195        TCP      56084 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+    223 4.065972       27.148.145.195        172.17.32.142         TCP      https(443) → 56084 [RST] Seq=648 Win=0 Len=0
+    224 4.075999       27.148.145.195        172.17.32.142         TCP      https(443) → 56084 [RST] Seq=648 Win=0 Len=0
+    225 4.360322       172.17.32.142         106.122.254.22        TCP      56085 → https(443) [SYN, ECN, CWR] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663690251 TSecr=0 SACK_PERM=1
+    226 4.377072       106.122.254.22        172.17.32.142         TCP      https(443) → 56085 [SYN, ACK, ECN] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    227 4.377178       172.17.32.142         106.122.254.22        TCP      56085 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    228 4.379768       172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+    229 4.391088       106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    230 4.391178       172.17.32.142         106.122.254.22        TCP      56085 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+    231 4.392336       172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    232 4.399135       106.122.254.22        172.17.32.142         TCP      https(443) → 56085 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+    233 4.399203       172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+    234 4.415730       106.122.254.22        172.17.32.142         TCP      https(443) → 56085 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+    235 4.467777       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    236 4.467856       172.17.32.142         106.122.254.22        TCP      56085 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+    237 4.470479       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    238 4.470540       172.17.32.142         106.122.254.22        TCP      56085 → https(443) [ACK] Seq=711 Ack=613 Win=262016 Len=0
+    239 4.471598       106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+    240 4.471680       172.17.32.142         106.122.254.22        TCP      56085 → https(443) [ACK] Seq=711 Ack=644 Win=262112 Len=0
+    241 4.472892       106.122.254.22        172.17.32.142         TCP      https(443) → 56085 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+    242 4.472931       172.17.32.142         106.122.254.22        TCP      56085 → https(443) [ACK] Seq=711 Ack=645 Win=262144 Len=0
+    243 4.475483       172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    244 4.476234       172.17.32.142         106.122.254.22        TCP      56085 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+    245 4.491332       106.122.254.22        172.17.32.142         TCP      https(443) → 56085 [RST] Seq=645 Win=0 Len=0
+    246 4.781643       172.17.32.142         27.148.145.195        TCP      56087 → https(443) [SYN, ECN, CWR] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663690661 TSecr=0 SACK_PERM=1
+    247 4.798552       27.148.145.195        172.17.32.142         TCP      https(443) → 56087 [SYN, ACK, ECN] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    248 4.798619       172.17.32.142         27.148.145.195        TCP      56087 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    249 4.800241       172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+    250 4.808384       27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    251 4.808464       172.17.32.142         27.148.145.195        TCP      56087 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+    252 4.809369       172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    253 4.815910       27.148.145.195        172.17.32.142         TCP      https(443) → 56087 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+    254 4.815976       172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+    255 4.831980       27.148.145.195        172.17.32.142         TCP      https(443) → 56087 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+    256 4.870052       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    257 4.870144       172.17.32.142         27.148.145.195        TCP      56087 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+    258 4.870735       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    259 4.870809       172.17.32.142         27.148.145.195        TCP      56087 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+    260 4.871579       27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+    261 4.871659       172.17.32.142         27.148.145.195        TCP      56087 → https(443) [ACK] Seq=711 Ack=647 Win=262112 Len=0
+    262 4.872839       27.148.145.195        172.17.32.142         TCP      https(443) → 56087 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+    263 4.872916       172.17.32.142         27.148.145.195        TCP      56087 → https(443) [ACK] Seq=711 Ack=648 Win=262144 Len=0
+    264 4.877829       172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+    265 4.878283       172.17.32.142         27.148.145.195        TCP      56087 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+    266 4.886361       27.148.145.195        172.17.32.142         TCP      https(443) → 56087 [RST] Seq=648 Win=0 Len=0
+    267 4.894259       27.148.145.195        172.17.32.142         TCP      https(443) → 56087 [RST] Seq=648 Win=0 Len=0
+    268 5.183317       172.17.32.142         106.122.254.22        TCP      56088 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663691056 TSecr=0 SACK_PERM=1
+    269 5.200847       106.122.254.22        172.17.32.142         TCP      https(443) → 56088 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    270 5.200945       172.17.32.142         106.122.254.22        TCP      56088 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    271 5.203474       172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+    272 5.218281       106.122.254.22        172.17.32.142         TCP      https(443) → 56088 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+    273 5.229229       106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    274 5.229308       172.17.32.142         106.122.254.22        TCP      56088 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+    275 5.230681       172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    276 5.239601       106.122.254.22        172.17.32.142         TLSv1.2  [TCP Spurious Retransmission] , Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    277 5.239664       172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+    278 5.286177       106.122.254.22        172.17.32.142         TCP      https(443) → 56088 [ACK] Seq=138 Ack=569 Win=176768 Len=0
+    279 5.308164       172.17.32.142         106.122.254.22        TCP      [TCP Retransmission] 56088 → https(443) [PSH, ACK] Seq=569 Ack=138 Win=262144 Len=142
+    280 5.327252       106.122.254.22        172.17.32.142         TCP      https(443) → 56088 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+    281 5.728061       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    282 5.728135       172.17.32.142         106.122.254.22        TCP      56088 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+    283 5.729601       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    284 5.729668       172.17.32.142         106.122.254.22        TCP      56088 → https(443) [ACK] Seq=711 Ack=613 Win=262016 Len=0
+    285 5.729759       106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+    286 5.729800       172.17.32.142         106.122.254.22        TCP      56088 → https(443) [ACK] Seq=711 Ack=644 Win=262112 Len=0
+    287 5.731980       106.122.254.22        172.17.32.142         TCP      https(443) → 56088 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+    288 5.732046       172.17.32.142         106.122.254.22        TCP      56088 → https(443) [ACK] Seq=711 Ack=645 Win=262144 Len=0
+    289 5.735059       172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    290 5.735851       172.17.32.142         106.122.254.22        TCP      56088 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+    291 5.739019       106.122.254.22        172.17.32.142         TCP      [TCP Out-Of-Order] https(443) → 56088 [PSH, ACK] Seq=613 Ack=711 Win=182528 Len=31
+    292 5.739220       172.17.32.142         106.122.254.22        TCP      [TCP Out-Of-Order] 56088 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0 SLE=613 SRE=644
+    293 5.742096       106.122.254.22        172.17.32.142         TCP      [TCP Out-Of-Order] https(443) → 56088 [PSH, ACK] Seq=613 Ack=711 Win=182528 Len=31
+    294 5.742195       172.17.32.142         106.122.254.22        TCP      [TCP Out-Of-Order] 56088 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0 SLE=613 SRE=644
+    295 5.746900       106.122.254.22        172.17.32.142         TCP      https(443) → 56088 [RST] Seq=645 Win=0 Len=0
+    296 5.754662       106.122.254.22        172.17.32.142         TCP      https(443) → 56088 [RST] Seq=645 Win=0 Len=0
+    297 5.765187       106.122.254.22        172.17.32.142         TCP      https(443) → 56088 [RST] Seq=645 Win=0 Len=0
+    298 6.039676       172.17.32.142         27.148.145.195        TCP      56089 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663691900 TSecr=0 SACK_PERM=1
+    299 6.055275       27.148.145.195        172.17.32.142         TCP      https(443) → 56089 [SYN, ACK] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    300 6.055489       172.17.32.142         27.148.145.195        TCP      56089 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    301 6.059779       172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+    302 6.069038       27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    303 6.069115       172.17.32.142         27.148.145.195        TCP      56089 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+    304 6.070657       172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    305 6.076886       27.148.145.195        172.17.32.142         TCP      https(443) → 56089 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+    306 6.076928       172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+    307 6.096049       27.148.145.195        172.17.32.142         TCP      https(443) → 56089 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+    308 6.141394       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    309 6.141446       172.17.32.142         27.148.145.195        TCP      56089 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+    310 6.141902       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    311 6.141935       172.17.32.142         27.148.145.195        TCP      56089 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+    312 6.142591       27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+    313 6.142630       172.17.32.142         27.148.145.195        TCP      56089 → https(443) [ACK] Seq=711 Ack=647 Win=262112 Len=0
+    314 6.148028       172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+    315 6.148153       172.17.32.142         27.148.145.195        TCP      56089 → https(443) [FIN, ACK] Seq=742 Ack=647 Win=262144 Len=0
+    316 6.149756       27.148.145.195        172.17.32.142         TCP      https(443) → 56089 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+    317 6.149798       172.17.32.142         27.148.145.195        TCP      [TCP Out-Of-Order] 56089 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+    318 6.160264       27.148.145.195        172.17.32.142         TCP      [TCP Out-Of-Order] https(443) → 56089 [PSH, ACK] Seq=616 Ack=711 Win=16768 Len=31
+    319 6.160308       172.17.32.142         27.148.145.195        TCP      [TCP Out-Of-Order] 56089 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0 SLE=616 SRE=647
+    320 6.162508       27.148.145.195        172.17.32.142         TCP      https(443) → 56089 [RST] Seq=647 Win=0 Len=0
+    321 6.162706       27.148.145.195        172.17.32.142         TCP      https(443) → 56089 [RST] Seq=647 Win=0 Len=0
+    322 6.163713       27.148.145.195        172.17.32.142         TCP      https(443) → 56089 [RST] Seq=648 Win=0 Len=0
+    323 6.176196       27.148.145.195        172.17.32.142         TCP      https(443) → 56089 [RST] Seq=648 Win=0 Len=0
+    324 6.452508       172.17.32.142         106.122.254.22        TCP      56090 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663692305 TSecr=0 SACK_PERM=1
+    325 6.469242       106.122.254.22        172.17.32.142         TCP      https(443) → 56090 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    326 6.469327       172.17.32.142         106.122.254.22        TCP      56090 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    327 6.472034       172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+    328 6.485538       106.122.254.22        172.17.32.142         TCP      https(443) → 56090 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+    329 6.486851       106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    330 6.486941       172.17.32.142         106.122.254.22        TCP      56090 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+    331 6.488050       172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    332 6.544284       106.122.254.22        172.17.32.142         TCP      https(443) → 56090 [ACK] Seq=138 Ack=569 Win=176768 Len=0
+    333 6.544353       172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+    334 6.559666       106.122.254.22        172.17.32.142         TCP      https(443) → 56090 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+    335 6.595970       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    336 6.596048       172.17.32.142         106.122.254.22        TCP      56090 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+    337 6.596423       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    338 6.596502       172.17.32.142         106.122.254.22        TCP      56090 → https(443) [ACK] Seq=711 Ack=613 Win=262016 Len=0
+    339 6.596705       106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+    340 6.596768       172.17.32.142         106.122.254.22        TCP      56090 → https(443) [ACK] Seq=711 Ack=644 Win=262112 Len=0
+    341 6.598171       106.122.254.22        172.17.32.142         TCP      https(443) → 56090 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+    342 6.598243       172.17.32.142         106.122.254.22        TCP      56090 → https(443) [ACK] Seq=711 Ack=645 Win=262144 Len=0
+    343 6.603272       172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    344 6.603689       172.17.32.142         106.122.254.22        TCP      56090 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+    345 6.610811       106.122.254.22        172.17.32.142         TCP      https(443) → 56090 [RST] Seq=645 Win=0 Len=0
+    346 6.619307       106.122.254.22        172.17.32.142         TCP      https(443) → 56090 [RST] Seq=645 Win=0 Len=0
+    347 6.907791       172.17.32.142         27.148.145.195        TCP      56091 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663692754 TSecr=0 SACK_PERM=1
+    348 6.923253       27.148.145.195        172.17.32.142         TCP      https(443) → 56091 [SYN, ACK] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    349 6.923377       172.17.32.142         27.148.145.195        TCP      56091 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    350 6.925578       172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+    351 6.994166       172.17.32.142         27.148.145.195        TCP      [TCP Retransmission] 56091 → https(443) [PSH, ACK] Seq=1 Ack=1 Win=262144 Len=517
+    352 7.013619       27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    353 7.013708       172.17.32.142         27.148.145.195        TCP      56091 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+    354 7.014842       27.148.145.195        172.17.32.142         TCP      https(443) → 56091 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+    355 7.014886       172.17.32.142         27.148.145.195        TCP      [TCP Window Update] 56091 → https(443) [ACK] Seq=518 Ack=142 Win=262144 Len=0
+    356 7.015015       172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    357 7.030133       27.148.145.195        172.17.32.142         TLSv1.2  [TCP Spurious Retransmission] , Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    358 7.030181       172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+    359 7.054210       27.148.145.195        172.17.32.142         TCP      https(443) → 56091 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+    360 7.094493       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    361 7.094569       172.17.32.142         27.148.145.195        TCP      56091 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+    362 7.101228       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    363 7.101278       172.17.32.142         27.148.145.195        TCP      56091 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+    364 7.102121       172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+    365 7.102464       172.17.32.142         27.148.145.195        TCP      56091 → https(443) [FIN, ACK] Seq=742 Ack=616 Win=262144 Len=0
+    366 7.103823       27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+    367 7.103880       172.17.32.142         27.148.145.195        TCP      [TCP Out-Of-Order] 56091 → https(443) [FIN, ACK] Seq=742 Ack=647 Win=262112 Len=0
+    368 7.105330       27.148.145.195        172.17.32.142         TCP      https(443) → 56091 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+    369 7.105376       172.17.32.142         27.148.145.195        TCP      [TCP Out-Of-Order] 56091 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+    370 7.106430       27.148.145.195        172.17.32.142         TCP      [TCP Out-Of-Order] https(443) → 56091 [PSH, ACK] Seq=616 Ack=711 Win=16768 Len=31
+    371 7.106532       172.17.32.142         27.148.145.195        TCP      [TCP Out-Of-Order] 56091 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0 SLE=616 SRE=647
+    372 7.115102       27.148.145.195        172.17.32.142         TCP      https(443) → 56091 [RST] Seq=616 Win=0 Len=0
+    373 7.116595       27.148.145.195        172.17.32.142         TCP      https(443) → 56091 [RST] Seq=616 Win=0 Len=0
+    374 7.117334       27.148.145.195        172.17.32.142         TCP      https(443) → 56091 [RST] Seq=647 Win=0 Len=0
+    375 7.118411       27.148.145.195        172.17.32.142         TCP      https(443) → 56091 [RST] Seq=648 Win=0 Len=0
+    376 7.119876       27.148.145.195        172.17.32.142         TCP      https(443) → 56091 [RST] Seq=648 Win=0 Len=0
+    377 7.406970       172.17.32.142         106.122.254.22        TCP      56092 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663693242 TSecr=0 SACK_PERM=1
+    378 7.424371       106.122.254.22        172.17.32.142         TCP      https(443) → 56092 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    379 7.424441       172.17.32.142         106.122.254.22        TCP      56092 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    380 7.426250       172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+    381 7.435682       106.122.254.22        172.17.32.142         TCP      https(443) → 56092 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+    382 7.443031       106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    383 7.443103       172.17.32.142         106.122.254.22        TCP      56092 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+    384 7.444410       172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    385 7.498530       106.122.254.22        172.17.32.142         TCP      https(443) → 56092 [ACK] Seq=138 Ack=569 Win=176768 Len=0
+    386 7.498589       172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+    387 7.517609       106.122.254.22        172.17.32.142         TCP      https(443) → 56092 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+    388 7.542104       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    389 7.542182       172.17.32.142         106.122.254.22        TCP      56092 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+    390 7.542716       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    391 7.542773       172.17.32.142         106.122.254.22        TCP      56092 → https(443) [ACK] Seq=711 Ack=613 Win=262016 Len=0
+    392 7.543725       106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+    393 7.543792       172.17.32.142         106.122.254.22        TCP      56092 → https(443) [ACK] Seq=711 Ack=644 Win=262112 Len=0
+    394 7.548145       172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    395 7.548355       172.17.32.142         106.122.254.22        TCP      56092 → https(443) [FIN, ACK] Seq=742 Ack=644 Win=262144 Len=0
+    396 7.551701       106.122.254.22        172.17.32.142         TCP      https(443) → 56092 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+    397 7.551744       172.17.32.142         106.122.254.22        TCP      [TCP Out-Of-Order] 56092 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+    398 7.556993       106.122.254.22        172.17.32.142         TCP      https(443) → 56092 [RST] Seq=644 Win=0 Len=0
+    399 7.564879       106.122.254.22        172.17.32.142         TCP      https(443) → 56092 [RST] Seq=644 Win=0 Len=0
+    400 7.573541       106.122.254.22        172.17.32.142         TCP      https(443) → 56092 [RST] Seq=645 Win=0 Len=0
+    401 7.852032       172.17.32.142         27.148.145.195        TCP      56094 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663693677 TSecr=0 SACK_PERM=1
+    402 7.868857       27.148.145.195        172.17.32.142         TCP      https(443) → 56094 [SYN, ACK] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    403 7.868939       172.17.32.142         27.148.145.195        TCP      56094 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    404 7.871112       172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+    405 7.885742       27.148.145.195        172.17.32.142         TCP      https(443) → 56094 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+    406 7.886753       27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    407 7.886838       172.17.32.142         27.148.145.195        TCP      56094 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+    408 7.888685       172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    409 7.904727       27.148.145.195        172.17.32.142         TLSv1.2  [TCP Spurious Retransmission] , Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    410 7.904826       172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+    411 7.920747       27.148.145.195        172.17.32.142         TCP      https(443) → 56094 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+    412 7.960179       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    413 7.960255       172.17.32.142         27.148.145.195        TCP      56094 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+    414 7.961542       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    415 7.961549       27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+    416 7.961611       172.17.32.142         27.148.145.195        TCP      56094 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+    417 7.961611       172.17.32.142         27.148.145.195        TCP      56094 → https(443) [ACK] Seq=711 Ack=647 Win=261984 Len=0
+    418 7.963284       27.148.145.195        172.17.32.142         TCP      https(443) → 56094 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+    419 7.963336       172.17.32.142         27.148.145.195        TCP      56094 → https(443) [ACK] Seq=711 Ack=648 Win=262144 Len=0
+    420 7.966193       172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+    421 7.966660       172.17.32.142         27.148.145.195        TCP      56094 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+    422 7.973980       27.148.145.195        172.17.32.142         TCP      https(443) → 56094 [RST] Seq=648 Win=0 Len=0
+    423 7.982237       27.148.145.195        172.17.32.142         TCP      https(443) → 56094 [RST] Seq=648 Win=0 Len=0
+    424 8.271375       172.17.32.142         106.122.254.22        TCP      56095 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663694088 TSecr=0 SACK_PERM=1
+    425 8.289741       106.122.254.22        172.17.32.142         TCP      https(443) → 56095 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    426 8.289840       172.17.32.142         106.122.254.22        TCP      56095 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    427 8.292349       172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+    428 8.307066       106.122.254.22        172.17.32.142         TCP      https(443) → 56095 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+    429 8.308389       106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    430 8.308471       172.17.32.142         106.122.254.22        TCP      56095 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+    431 8.309556       172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    432 8.367234       106.122.254.22        172.17.32.142         TCP      https(443) → 56095 [ACK] Seq=138 Ack=569 Win=176768 Len=0
+    433 8.367302       172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+    434 8.385419       106.122.254.22        172.17.32.142         TCP      https(443) → 56095 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+    435 8.442521       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    436 8.442582       172.17.32.142         106.122.254.22        TCP      56095 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+    437 8.443421       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    438 8.443456       172.17.32.142         106.122.254.22        TCP      56095 → https(443) [ACK] Seq=711 Ack=613 Win=262016 Len=0
+    439 8.444695       106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+    440 8.444759       172.17.32.142         106.122.254.22        TCP      56095 → https(443) [ACK] Seq=711 Ack=644 Win=262112 Len=0
+    441 8.445647       106.122.254.22        172.17.32.142         TCP      https(443) → 56095 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+    442 8.445691       172.17.32.142         106.122.254.22        TCP      56095 → https(443) [ACK] Seq=711 Ack=645 Win=262144 Len=0
+    443 8.450805       172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    444 8.451014       172.17.32.142         106.122.254.22        TCP      56095 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+    445 8.470204       106.122.254.22        172.17.32.142         TCP      https(443) → 56095 [RST] Seq=645 Win=0 Len=0
+    446 8.757895       172.17.32.142         27.148.145.195        TCP      56096 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663694568 TSecr=0 SACK_PERM=1
+    447 8.774455       27.148.145.195        172.17.32.142         TCP      https(443) → 56096 [SYN, ACK] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    448 8.774558       172.17.32.142         27.148.145.195        TCP      56096 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    449 8.777211       172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+    450 8.859109       172.17.32.142         27.148.145.195        TCP      [TCP Retransmission] 56096 → https(443) [PSH, ACK] Seq=1 Ack=1 Win=262144 Len=517
+    451 8.876685       27.148.145.195        172.17.32.142         TCP      https(443) → 56096 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+    452 8.878079       27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    453 8.878173       172.17.32.142         27.148.145.195        TCP      56096 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+    454 8.879752       172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    455 8.935842       27.148.145.195        172.17.32.142         TCP      https(443) → 56096 [ACK] Seq=142 Ack=569 Win=15744 Len=0
+    456 8.935948       172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+    457 9.060631       172.17.32.142         27.148.145.195        TCP      [TCP Retransmission] 56096 → https(443) [PSH, ACK] Seq=569 Ack=142 Win=262144 Len=142
+    458 9.077059       27.148.145.195        172.17.32.142         TCP      https(443) → 56096 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+    459 9.117507       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    460 9.117607       172.17.32.142         27.148.145.195        TCP      56096 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+    461 9.117697       27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    462 9.117741       172.17.32.142         27.148.145.195        TCP      56096 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+    463 9.118884       27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+    464 9.118941       172.17.32.142         27.148.145.195        TCP      56096 → https(443) [ACK] Seq=711 Ack=647 Win=262112 Len=0
+    465 9.120801       27.148.145.195        172.17.32.142         TCP      https(443) → 56096 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+    466 9.120887       172.17.32.142         27.148.145.195        TCP      56096 → https(443) [ACK] Seq=711 Ack=648 Win=262144 Len=0
+    467 9.125694       172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+    468 9.125895       172.17.32.142         27.148.145.195        TCP      56096 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+    469 9.134410       27.148.145.195        172.17.32.142         TCP      https(443) → 56096 [RST] Seq=648 Win=0 Len=0
+    470 9.142517       27.148.145.195        172.17.32.142         TCP      https(443) → 56096 [RST] Seq=648 Win=0 Len=0
+    471 9.431431       172.17.32.142         106.122.254.22        TCP      56097 → https(443) [SYN, ECN, CWR] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663695230 TSecr=0 SACK_PERM=1
+    472 9.450865       106.122.254.22        172.17.32.142         TCP      https(443) → 56097 [SYN, ACK, ECN] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    473 9.450972       172.17.32.142         106.122.254.22        TCP      56097 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    474 9.453112       172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+    475 9.469429       106.122.254.22        172.17.32.142         TCP      https(443) → 56097 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+    476 9.470746       106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    477 9.470835       172.17.32.142         106.122.254.22        TCP      56097 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+    478 9.472167       172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    479 9.528006       106.122.254.22        172.17.32.142         TCP      https(443) → 56097 [ACK] Seq=138 Ack=569 Win=176768 Len=0
+    480 9.528096       172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+    481 9.654237       172.17.32.142         106.122.254.22        TCP      [TCP Retransmission] 56097 → https(443) [PSH, ACK] Seq=569 Ack=138 Win=262144 Len=142
+    482 9.673271       106.122.254.22        172.17.32.142         TCP      https(443) → 56097 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+    483 9.713918       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    484 9.713990       172.17.32.142         106.122.254.22        TCP      56097 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+    485 9.714492       106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    486 9.714545       172.17.32.142         106.122.254.22        TCP      56097 → https(443) [ACK] Seq=711 Ack=613 Win=262016 Len=0
+    487 9.714782       106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+    488 9.714829       172.17.32.142         106.122.254.22        TCP      56097 → https(443) [ACK] Seq=711 Ack=644 Win=262112 Len=0
+    489 9.716653       106.122.254.22        172.17.32.142         TCP      https(443) → 56097 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+    490 9.716697       172.17.32.142         106.122.254.22        TCP      56097 → https(443) [ACK] Seq=711 Ack=645 Win=262144 Len=0
+    491 9.722665       172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    492 9.723192       172.17.32.142         106.122.254.22        TCP      56097 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+    493 9.737897       106.122.254.22        172.17.32.142         TCP      https(443) → 56097 [RST] Seq=645 Win=0 Len=0
+    494 9.739181       106.122.254.22        172.17.32.142         TCP      https(443) → 56097 [RST] Seq=645 Win=0 Len=0
+    495 10.027748      172.17.32.142         27.148.145.195        TCP      56098 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663695819 TSecr=0 SACK_PERM=1
+    496 10.049392      27.148.145.195        172.17.32.142         TCP      https(443) → 56098 [SYN, ACK] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    497 10.049474      172.17.32.142         27.148.145.195        TCP      56098 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    498 10.051883      172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+    499 10.060895      27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    500 10.060957      172.17.32.142         27.148.145.195        TCP      56098 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+    501 10.062076      172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    502 10.067934      27.148.145.195        172.17.32.142         TCP      https(443) → 56098 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+    503 10.067993      172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+    504 10.086450      27.148.145.195        172.17.32.142         TCP      https(443) → 56098 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+    505 10.120410      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    506 10.120497      172.17.32.142         27.148.145.195        TCP      56098 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+    507 10.121169      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    508 10.121236      172.17.32.142         27.148.145.195        TCP      56098 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+    509 10.122342      27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+    510 10.122419      172.17.32.142         27.148.145.195        TCP      56098 → https(443) [ACK] Seq=711 Ack=647 Win=262112 Len=0
+    511 10.123858      27.148.145.195        172.17.32.142         TCP      https(443) → 56098 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+    512 10.123932      172.17.32.142         27.148.145.195        TCP      56098 → https(443) [ACK] Seq=711 Ack=648 Win=262144 Len=0
+    513 10.130172      172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+    514 10.130603      172.17.32.142         27.148.145.195        TCP      56098 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+    515 10.144300      27.148.145.195        172.17.32.142         TCP      https(443) → 56098 [RST] Seq=648 Win=0 Len=0
+    516 10.145513      27.148.145.195        172.17.32.142         TCP      https(443) → 56098 [RST] Seq=648 Win=0 Len=0
+    517 10.435910      172.17.32.142         106.122.254.22        TCP      56099 → https(443) [SYN, ECN, CWR] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663696218 TSecr=0 SACK_PERM=1
+    518 10.453936      106.122.254.22        172.17.32.142         TCP      https(443) → 56099 [SYN, ACK, ECN] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    519 10.454019      172.17.32.142         106.122.254.22        TCP      56099 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    520 10.456413      172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+    521 10.465273      106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    522 10.465359      172.17.32.142         106.122.254.22        TCP      56099 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+    523 10.466393      172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    524 10.473211      106.122.254.22        172.17.32.142         TCP      https(443) → 56099 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+    525 10.473298      172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+    526 10.489037      106.122.254.22        172.17.32.142         TCP      https(443) → 56099 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+    527 10.531592      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    528 10.531599      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    529 10.531693      172.17.32.142         106.122.254.22        TCP      56099 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+    530 10.531693      172.17.32.142         106.122.254.22        TCP      56099 → https(443) [ACK] Seq=711 Ack=613 Win=261664 Len=0
+    531 10.534200      106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+    532 10.534246      172.17.32.142         106.122.254.22        TCP      56099 → https(443) [ACK] Seq=711 Ack=644 Win=262112 Len=0
+    533 10.535537      106.122.254.22        172.17.32.142         TCP      https(443) → 56099 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+    534 10.535579      172.17.32.142         106.122.254.22        TCP      56099 → https(443) [ACK] Seq=711 Ack=645 Win=262144 Len=0
+    535 10.540408      172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    536 10.541575      172.17.32.142         106.122.254.22        TCP      56099 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+    537 10.549280      106.122.254.22        172.17.32.142         TCP      [TCP Out-Of-Order] https(443) → 56099 [PSH, ACK] Seq=613 Ack=711 Win=182528 Len=31
+    538 10.549348      172.17.32.142         106.122.254.22        TCP      [TCP Out-Of-Order] 56099 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0 SLE=613 SRE=644
+    539 10.552020      106.122.254.22        172.17.32.142         TCP      https(443) → 56099 [RST] Seq=645 Win=0 Len=0
+    540 10.559436      106.122.254.22        172.17.32.142         TCP      https(443) → 56099 [RST] Seq=645 Win=0 Len=0
+    541 10.568281      106.122.254.22        172.17.32.142         TCP      https(443) → 56099 [RST] Seq=645 Win=0 Len=0
+    542 10.845559      172.17.32.142         27.148.145.195        TCP      56101 → https(443) [SYN, ECN, CWR] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663696617 TSecr=0 SACK_PERM=1
+    543 10.860974      27.148.145.195        172.17.32.142         TCP      https(443) → 56101 [SYN, ACK, ECN] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    544 10.861057      172.17.32.142         27.148.145.195        TCP      56101 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    545 10.863222      172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+    546 10.872683      27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    547 10.872766      172.17.32.142         27.148.145.195        TCP      56101 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+    548 10.873808      172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    549 10.880057      27.148.145.195        172.17.32.142         TCP      https(443) → 56101 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+    550 10.880119      172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+    551 10.895949      27.148.145.195        172.17.32.142         TCP      https(443) → 56101 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+    552 10.937491      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    553 10.937572      172.17.32.142         27.148.145.195        TCP      56101 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+    554 10.938251      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    555 10.938325      172.17.32.142         27.148.145.195        TCP      56101 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+    556 10.939256      27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+    557 10.939421      172.17.32.142         27.148.145.195        TCP      56101 → https(443) [ACK] Seq=711 Ack=647 Win=262112 Len=0
+    558 10.941191      27.148.145.195        172.17.32.142         TCP      https(443) → 56101 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+    559 10.941283      172.17.32.142         27.148.145.195        TCP      56101 → https(443) [ACK] Seq=711 Ack=648 Win=262144 Len=0
+    560 10.946287      172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+    561 10.946494      172.17.32.142         27.148.145.195        TCP      56101 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+    562 10.955401      27.148.145.195        172.17.32.142         TCP      https(443) → 56101 [RST] Seq=648 Win=0 Len=0
+    563 10.963033      27.148.145.195        172.17.32.142         TCP      https(443) → 56101 [RST] Seq=648 Win=0 Len=0
+    564 11.250788      172.17.32.142         106.122.254.22        TCP      56102 → https(443) [SYN, ECN, CWR] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663697014 TSecr=0 SACK_PERM=1
+    565 11.270336      106.122.254.22        172.17.32.142         TCP      https(443) → 56102 [SYN, ACK, ECN] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    566 11.270420      172.17.32.142         106.122.254.22        TCP      56102 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    567 11.272482      172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+    568 11.288256      106.122.254.22        172.17.32.142         TCP      https(443) → 56102 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+    569 11.289485      106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    570 11.289578      172.17.32.142         106.122.254.22        TCP      56102 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+    571 11.290687      172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    572 11.307864      106.122.254.22        172.17.32.142         TLSv1.2  [TCP Spurious Retransmission] , Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    573 11.307943      172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+    574 11.324024      106.122.254.22        172.17.32.142         TCP      https(443) → 56102 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+    575 11.365207      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    576 11.365303      172.17.32.142         106.122.254.22        TCP      56102 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+    577 11.366851      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    578 11.366857      106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+    579 11.366928      172.17.32.142         106.122.254.22        TCP      56102 → https(443) [ACK] Seq=711 Ack=613 Win=262016 Len=0
+    580 11.366929      172.17.32.142         106.122.254.22        TCP      56102 → https(443) [ACK] Seq=711 Ack=644 Win=261984 Len=0
+    581 11.369310      106.122.254.22        172.17.32.142         TCP      https(443) → 56102 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+    582 11.369356      172.17.32.142         106.122.254.22        TCP      56102 → https(443) [ACK] Seq=711 Ack=645 Win=262144 Len=0
+    583 11.371629      172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    584 11.371822      172.17.32.142         106.122.254.22        TCP      56102 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+    585 11.385781      106.122.254.22        172.17.32.142         TCP      https(443) → 56102 [RST] Seq=645 Win=0 Len=0
+    586 11.386929      106.122.254.22        172.17.32.142         TCP      https(443) → 56102 [RST] Seq=645 Win=0 Len=0
+    587 11.677105      172.17.32.142         27.148.145.195        TCP      56103 → https(443) [SYN, ECN, CWR] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663697433 TSecr=0 SACK_PERM=1
+    588 11.694360      27.148.145.195        172.17.32.142         TCP      https(443) → 56103 [SYN, ACK, ECN] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    589 11.694453      172.17.32.142         27.148.145.195        TCP      56103 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    590 11.696891      172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+    591 11.709111      27.148.145.195        172.17.32.142         TCP      https(443) → 56103 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+    592 11.710016      27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    593 11.710070      172.17.32.142         27.148.145.195        TCP      56103 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+    594 11.710799      172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    595 11.770341      27.148.145.195        172.17.32.142         TCP      https(443) → 56103 [ACK] Seq=142 Ack=569 Win=15744 Len=0
+    596 11.770419      172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+    597 11.787514      27.148.145.195        172.17.32.142         TCP      https(443) → 56103 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+    598 11.831530      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    599 11.831603      172.17.32.142         27.148.145.195        TCP      56103 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+    600 11.833332      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    601 11.833387      172.17.32.142         27.148.145.195        TCP      56103 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+    602 11.834336      27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+    603 11.834412      172.17.32.142         27.148.145.195        TCP      56103 → https(443) [ACK] Seq=711 Ack=647 Win=262112 Len=0
+    604 11.836661      27.148.145.195        172.17.32.142         TCP      https(443) → 56103 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+    605 11.836708      172.17.32.142         27.148.145.195        TCP      56103 → https(443) [ACK] Seq=711 Ack=648 Win=262144 Len=0
+    606 11.840513      172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+    607 11.840852      172.17.32.142         27.148.145.195        TCP      56103 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+    608 11.849877      27.148.145.195        172.17.32.142         TCP      https(443) → 56103 [RST] Seq=648 Win=0 Len=0
+    609 11.850908      27.148.145.195        172.17.32.142         TCP      https(443) → 56103 [RST] Seq=648 Win=0 Len=0
+    610 12.144400      172.17.32.142         106.122.254.22        TCP      56104 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663697893 TSecr=0 SACK_PERM=1
+    611 12.160290      106.122.254.22        172.17.32.142         TCP      https(443) → 56104 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    612 12.160380      172.17.32.142         106.122.254.22        TCP      56104 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    613 12.163010      172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+    614 12.178952      106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    615 12.179032      172.17.32.142         106.122.254.22        TCP      56104 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+    616 12.180053      106.122.254.22        172.17.32.142         TCP      https(443) → 56104 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+    617 12.180118      172.17.32.142         106.122.254.22        TCP      [TCP Window Update] 56104 → https(443) [ACK] Seq=518 Ack=138 Win=262144 Len=0
+    618 12.180454      172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    619 12.237240      106.122.254.22        172.17.32.142         TCP      https(443) → 56104 [ACK] Seq=138 Ack=569 Win=176768 Len=0
+    620 12.237329      172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+    621 12.254116      106.122.254.22        172.17.32.142         TCP      https(443) → 56104 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+    622 12.290979      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    623 12.290984      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    624 12.291099      172.17.32.142         106.122.254.22        TCP      56104 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+    625 12.291100      172.17.32.142         106.122.254.22        TCP      56104 → https(443) [ACK] Seq=711 Ack=613 Win=261664 Len=0
+    626 12.291603      106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+    627 12.291656      172.17.32.142         106.122.254.22        TCP      56104 → https(443) [ACK] Seq=711 Ack=644 Win=262112 Len=0
+    628 12.293440      106.122.254.22        172.17.32.142         TCP      https(443) → 56104 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+    629 12.293503      172.17.32.142         106.122.254.22        TCP      56104 → https(443) [ACK] Seq=711 Ack=645 Win=262144 Len=0
+    630 12.299424      172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    631 12.299782      172.17.32.142         106.122.254.22        TCP      56104 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+    632 12.308211      106.122.254.22        172.17.32.142         TCP      https(443) → 56104 [RST] Seq=645 Win=0 Len=0
+    633 12.316282      106.122.254.22        172.17.32.142         TCP      https(443) → 56104 [RST] Seq=645 Win=0 Len=0
+    634 12.603708      172.17.32.142         27.148.145.195        TCP      56105 → https(443) [SYN, ECN, CWR] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663698345 TSecr=0 SACK_PERM=1
+    635 12.620152      27.148.145.195        172.17.32.142         TCP      https(443) → 56105 [SYN, ACK, ECN] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    636 12.620210      172.17.32.142         27.148.145.195        TCP      56105 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    637 12.621552      172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+    638 12.629997      27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    639 12.630048      172.17.32.142         27.148.145.195        TCP      56105 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+    640 12.630755      172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    641 12.637288      27.148.145.195        172.17.32.142         TCP      https(443) → 56105 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+    642 12.637332      172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+    643 12.653660      27.148.145.195        172.17.32.142         TCP      https(443) → 56105 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+    644 12.694328      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    645 12.694405      172.17.32.142         27.148.145.195        TCP      56105 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+    646 12.695166      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    647 12.695222      172.17.32.142         27.148.145.195        TCP      56105 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+    648 12.695403      27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+    649 12.695435      172.17.32.142         27.148.145.195        TCP      56105 → https(443) [ACK] Seq=711 Ack=647 Win=262112 Len=0
+    650 12.697122      27.148.145.195        172.17.32.142         TCP      https(443) → 56105 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+    651 12.697179      172.17.32.142         27.148.145.195        TCP      56105 → https(443) [ACK] Seq=711 Ack=648 Win=262144 Len=0
+    652 12.708394      172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+    653 12.708942      172.17.32.142         27.148.145.195        TCP      56105 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+    654 12.724001      27.148.145.195        172.17.32.142         TCP      https(443) → 56105 [RST] Seq=648 Win=0 Len=0
+    655 12.731536      27.148.145.195        172.17.32.142         TCP      https(443) → 56105 [RST] Seq=648 Win=0 Len=0
+    656 13.013022      172.17.32.142         106.122.254.22        TCP      56106 → https(443) [SYN, ECN, CWR] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663698746 TSecr=0 SACK_PERM=1
+    657 13.032927      106.122.254.22        172.17.32.142         TCP      https(443) → 56106 [SYN, ACK, ECN] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    658 13.032987      172.17.32.142         106.122.254.22        TCP      56106 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    659 13.034329      172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+    660 13.042679      106.122.254.22        172.17.32.142         TCP      https(443) → 56106 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+    661 13.050782      106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    662 13.050855      172.17.32.142         106.122.254.22        TCP      56106 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+    663 13.052089      172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    664 13.107952      106.122.254.22        172.17.32.142         TCP      https(443) → 56106 [ACK] Seq=138 Ack=569 Win=176768 Len=0
+    665 13.108100      172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+    666 13.132119      106.122.254.22        172.17.32.142         TCP      https(443) → 56106 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+    667 13.167769      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    668 13.167777      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    669 13.167879      172.17.32.142         106.122.254.22        TCP      56106 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+    670 13.167880      172.17.32.142         106.122.254.22        TCP      56106 → https(443) [ACK] Seq=711 Ack=613 Win=261664 Len=0
+    671 13.168389      106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+    672 13.168437      172.17.32.142         106.122.254.22        TCP      56106 → https(443) [ACK] Seq=711 Ack=644 Win=262112 Len=0
+    673 13.169427      106.122.254.22        172.17.32.142         TCP      https(443) → 56106 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+    674 13.169476      172.17.32.142         106.122.254.22        TCP      56106 → https(443) [ACK] Seq=711 Ack=645 Win=262144 Len=0
+    675 13.175098      172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    676 13.175874      172.17.32.142         106.122.254.22        TCP      56106 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+    677 13.192587      106.122.254.22        172.17.32.142         TCP      https(443) → 56106 [RST] Seq=645 Win=0 Len=0
+    678 13.193411      106.122.254.22        172.17.32.142         TCP      https(443) → 56106 [RST] Seq=645 Win=0 Len=0
+    679 13.482565      172.17.32.142         27.148.145.195        TCP      56107 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663699210 TSecr=0 SACK_PERM=1
+    680 13.500775      27.148.145.195        172.17.32.142         TCP      https(443) → 56107 [SYN, ACK] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    681 13.500857      172.17.32.142         27.148.145.195        TCP      56107 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    682 13.502949      172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+    683 13.520049      27.148.145.195        172.17.32.142         TCP      https(443) → 56107 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+    684 13.576255      27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    685 13.576372      172.17.32.142         27.148.145.195        TCP      56107 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+    686 13.577806      172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    687 13.597712      27.148.145.195        172.17.32.142         TCP      https(443) → 56107 [ACK] Seq=142 Ack=569 Win=15744 Len=0
+    688 13.597799      172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+    689 13.621049      27.148.145.195        172.17.32.142         TCP      https(443) → 56107 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+    690 13.653570      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    691 13.653646      172.17.32.142         27.148.145.195        TCP      56107 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+    692 13.654718      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    693 13.654767      172.17.32.142         27.148.145.195        TCP      56107 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+    694 13.655160      27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+    695 13.655213      172.17.32.142         27.148.145.195        TCP      56107 → https(443) [ACK] Seq=711 Ack=647 Win=262112 Len=0
+    696 13.656639      27.148.145.195        172.17.32.142         TCP      https(443) → 56107 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+    697 13.656706      172.17.32.142         27.148.145.195        TCP      56107 → https(443) [ACK] Seq=711 Ack=648 Win=262144 Len=0
+    698 13.662144      172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+    699 13.662521      172.17.32.142         27.148.145.195        TCP      56107 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+    700 13.678525      27.148.145.195        172.17.32.142         TCP      https(443) → 56107 [RST] Seq=648 Win=0 Len=0
+    701 13.679470      27.148.145.195        172.17.32.142         TCP      https(443) → 56107 [RST] Seq=648 Win=0 Len=0
+    702 13.967258      172.17.32.142         106.122.254.22        TCP      56109 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663699686 TSecr=0 SACK_PERM=1
+    703 14.969054      172.17.32.142         106.122.254.22        TCP      [TCP Retransmission] 56109 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663700686 TSecr=0 SACK_PERM=1
+    704 15.970271      172.17.32.142         106.122.254.22        TCP      [TCP Retransmission] 56109 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663701686 TSecr=0 SACK_PERM=1
+    705 15.985543      106.122.254.22        172.17.32.142         TCP      https(443) → 56109 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    706 15.985625      172.17.32.142         106.122.254.22        TCP      56109 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    707 15.987882      172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+    708 15.996394      106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    709 15.996481      172.17.32.142         106.122.254.22        TCP      56109 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+    710 15.997878      172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    711 16.004471      106.122.254.22        172.17.32.142         TCP      https(443) → 56109 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+    712 16.004519      172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+    713 16.020381      106.122.254.22        172.17.32.142         TCP      https(443) → 56109 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+    714 16.050621      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    715 16.050686      172.17.32.142         106.122.254.22        TCP      56109 → https(443) [ACK] Seq=711 Ack=513 Win=261760 Len=0
+    716 16.051025      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    717 16.051085      172.17.32.142         106.122.254.22        TCP      56109 → https(443) [ACK] Seq=711 Ack=614 Win=262016 Len=0
+    718 16.051178      106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+    719 16.051215      172.17.32.142         106.122.254.22        TCP      56109 → https(443) [ACK] Seq=711 Ack=645 Win=262112 Len=0
+    720 16.052455      106.122.254.22        172.17.32.142         TCP      https(443) → 56109 [FIN, ACK] Seq=645 Ack=711 Win=182528 Len=0
+    721 16.052510      172.17.32.142         106.122.254.22        TCP      56109 → https(443) [ACK] Seq=711 Ack=646 Win=262144 Len=0
+    722 16.058913      172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    723 16.059572      172.17.32.142         106.122.254.22        TCP      56109 → https(443) [FIN, ACK] Seq=742 Ack=646 Win=262144 Len=0
+    724 16.074503      106.122.254.22        172.17.32.142         TCP      https(443) → 56109 [RST] Seq=646 Win=0 Len=0
+    725 16.084901      106.122.254.22        172.17.32.142         TCP      https(443) → 56109 [RST] Seq=646 Win=0 Len=0
+    726 16.362709      172.17.32.142         27.148.145.195        TCP      56110 → https(443) [SYN, ECN, CWR] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663702071 TSecr=0 SACK_PERM=1
+    727 16.378268      27.148.145.195        172.17.32.142         TCP      https(443) → 56110 [SYN, ACK, ECN] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    728 16.378351      172.17.32.142         27.148.145.195        TCP      56110 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    729 16.380420      172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+    730 16.449364      172.17.32.142         27.148.145.195        TCP      [TCP Retransmission] 56110 → https(443) [PSH, ACK] Seq=1 Ack=1 Win=262144 Len=517
+    731 16.457810      27.148.145.195        172.17.32.142         TCP      https(443) → 56110 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+    732 16.465672      27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    733 16.465769      172.17.32.142         27.148.145.195        TCP      56110 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+    734 16.467203      172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    735 16.714496      172.17.32.142         27.148.145.195        TCP      [TCP Retransmission] 56110 → https(443) [PSH, ACK] Seq=518 Ack=142 Win=262144 Len=193
+    736 16.772325      27.148.145.195        172.17.32.142         TCP      [TCP ACKed unseen segment] https(443) → 56110 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+    737 16.773081      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    738 16.773150      172.17.32.142         27.148.145.195        TCP      56110 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+    739 16.774201      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    740 16.774266      172.17.32.142         27.148.145.195        TCP      56110 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+    741 16.775139      27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+    742 16.775192      172.17.32.142         27.148.145.195        TCP      56110 → https(443) [ACK] Seq=711 Ack=647 Win=262112 Len=0
+    743 16.778649      27.148.145.195        172.17.32.142         TCP      https(443) → 56110 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+    744 16.778738      172.17.32.142         27.148.145.195        TCP      56110 → https(443) [ACK] Seq=711 Ack=648 Win=262144 Len=0
+    745 16.783544      172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+    746 16.783924      172.17.32.142         27.148.145.195        TCP      56110 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+    747 16.791783      27.148.145.195        172.17.32.142         TCP      https(443) → 56110 [RST] Seq=648 Win=0 Len=0
+    748 16.799443      27.148.145.195        172.17.32.142         TCP      https(443) → 56110 [RST] Seq=648 Win=0 Len=0
+    749 17.086581      172.17.32.142         106.122.254.22        TCP      56112 → https(443) [SYN, ECN, CWR] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663702784 TSecr=0 SACK_PERM=1
+    750 17.107451      106.122.254.22        172.17.32.142         TCP      https(443) → 56112 [SYN, ACK, ECN] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    751 17.107501      172.17.32.142         106.122.254.22        TCP      56112 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    752 17.109284      172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+    753 17.128406      106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    754 17.128464      172.17.32.142         106.122.254.22        TCP      56112 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+    755 17.129194      172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    756 17.131829      106.122.254.22        172.17.32.142         TCP      https(443) → 56112 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+    757 17.131871      172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+    758 17.208340      172.17.32.142         106.122.254.22        TCP      [TCP Retransmission] 56112 → https(443) [PSH, ACK] Seq=518 Ack=138 Win=262144 Len=193
+    759 17.264116      106.122.254.22        172.17.32.142         TCP      https(443) → 56112 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+    760 17.264711      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    761 17.264765      172.17.32.142         106.122.254.22        TCP      56112 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+    762 17.266413      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    763 17.266476      172.17.32.142         106.122.254.22        TCP      56112 → https(443) [ACK] Seq=711 Ack=613 Win=262016 Len=0
+    764 17.266934      106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+    765 17.266971      172.17.32.142         106.122.254.22        TCP      56112 → https(443) [ACK] Seq=711 Ack=644 Win=262112 Len=0
+    766 17.272447      172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    767 17.272705      172.17.32.142         106.122.254.22        TCP      56112 → https(443) [FIN, ACK] Seq=742 Ack=644 Win=262144 Len=0
+    768 17.276027      106.122.254.22        172.17.32.142         TCP      https(443) → 56112 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+    769 17.276079      172.17.32.142         106.122.254.22        TCP      [TCP Out-Of-Order] 56112 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+    770 17.285161      106.122.254.22        172.17.32.142         TCP      https(443) → 56112 [RST] Seq=644 Win=0 Len=0
+    771 17.286238      106.122.254.22        172.17.32.142         TCP      https(443) → 56112 [RST] Seq=644 Win=0 Len=0
+    772 17.288492      106.122.254.22        172.17.32.142         TCP      https(443) → 56112 [RST] Seq=645 Win=0 Len=0
+    773 17.577725      172.17.32.142         27.148.145.195        TCP      56113 → https(443) [SYN, ECN, CWR] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663703265 TSecr=0 SACK_PERM=1
+    774 17.594421      27.148.145.195        172.17.32.142         TCP      https(443) → 56113 [SYN, ACK, ECN] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    775 17.594559      172.17.32.142         27.148.145.195        TCP      56113 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    776 17.597100      172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+    777 17.605789      27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    778 17.605884      172.17.32.142         27.148.145.195        TCP      56113 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+    779 17.607604      172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    780 17.613890      27.148.145.195        172.17.32.142         TCP      https(443) → 56113 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+    781 17.613957      172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+    782 17.631052      27.148.145.195        172.17.32.142         TCP      https(443) → 56113 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+    783 17.671375      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    784 17.671478      172.17.32.142         27.148.145.195        TCP      56113 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+    785 17.672810      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    786 17.672887      172.17.32.142         27.148.145.195        TCP      56113 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+    787 17.672980      27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+    788 17.673024      172.17.32.142         27.148.145.195        TCP      56113 → https(443) [ACK] Seq=711 Ack=647 Win=262112 Len=0
+    789 17.676017      27.148.145.195        172.17.32.142         TCP      https(443) → 56113 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+    790 17.676070      172.17.32.142         27.148.145.195        TCP      56113 → https(443) [ACK] Seq=711 Ack=648 Win=262144 Len=0
+    791 17.680318      172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+    792 17.680719      172.17.32.142         27.148.145.195        TCP      56113 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+    793 17.689831      27.148.145.195        172.17.32.142         TCP      https(443) → 56113 [RST] Seq=648 Win=0 Len=0
+    794 17.697496      27.148.145.195        172.17.32.142         TCP      https(443) → 56113 [RST] Seq=648 Win=0 Len=0
+    795 17.984675      172.17.32.142         106.122.254.22        TCP      56114 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663703663 TSecr=0 SACK_PERM=1
+    796 18.004040      106.122.254.22        172.17.32.142         TCP      https(443) → 56114 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    797 18.004126      172.17.32.142         106.122.254.22        TCP      56114 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    798 18.006359      172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+    799 18.013244      106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    800 18.013317      172.17.32.142         106.122.254.22        TCP      56114 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+    801 18.014393      172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    802 18.021170      106.122.254.22        172.17.32.142         TCP      https(443) → 56114 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+    803 18.021242      172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+    804 18.043545      106.122.254.22        172.17.32.142         TCP      https(443) → 56114 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+    805 18.077078      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    806 18.077186      172.17.32.142         106.122.254.22        TCP      56114 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+    807 18.079366      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    808 18.079482      172.17.32.142         106.122.254.22        TCP      56114 → https(443) [ACK] Seq=711 Ack=613 Win=262016 Len=0
+    809 18.085362      106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+    810 18.085442      172.17.32.142         106.122.254.22        TCP      56114 → https(443) [ACK] Seq=711 Ack=644 Win=262112 Len=0
+    811 18.086038      106.122.254.22        172.17.32.142         TCP      https(443) → 56114 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+    812 18.086100      172.17.32.142         106.122.254.22        TCP      56114 → https(443) [ACK] Seq=711 Ack=645 Win=262144 Len=0
+    813 18.087966      172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    814 18.088466      172.17.32.142         106.122.254.22        TCP      56114 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+    815 18.104266      106.122.254.22        172.17.32.142         TCP      https(443) → 56114 [RST] Seq=645 Win=0 Len=0
+    816 18.111922      106.122.254.22        172.17.32.142         TCP      https(443) → 56114 [RST] Seq=645 Win=0 Len=0
+    817 18.392433      172.17.32.142         27.148.145.195        TCP      56115 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663704060 TSecr=0 SACK_PERM=1
+    818 18.411969      27.148.145.195        172.17.32.142         TCP      https(443) → 56115 [SYN, ACK] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    819 18.412051      172.17.32.142         27.148.145.195        TCP      56115 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    820 18.414189      172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+    821 18.424347      27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    822 18.424437      172.17.32.142         27.148.145.195        TCP      56115 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+    823 18.426254      172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    824 18.432184      27.148.145.195        172.17.32.142         TCP      https(443) → 56115 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+    825 18.432264      172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+    826 18.447258      27.148.145.195        172.17.32.142         TCP      https(443) → 56115 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+    827 18.484648      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    828 18.484738      172.17.32.142         27.148.145.195        TCP      56115 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+    829 18.485102      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    830 18.485172      172.17.32.142         27.148.145.195        TCP      56115 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+    831 18.485843      27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+    832 18.485908      172.17.32.142         27.148.145.195        TCP      56115 → https(443) [ACK] Seq=711 Ack=647 Win=262112 Len=0
+    833 18.487953      27.148.145.195        172.17.32.142         TCP      https(443) → 56115 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+    834 18.488042      172.17.32.142         27.148.145.195        TCP      56115 → https(443) [ACK] Seq=711 Ack=648 Win=262144 Len=0
+    835 18.493323      172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+    836 18.493716      172.17.32.142         27.148.145.195        TCP      56115 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+    837 18.515867      27.148.145.195        172.17.32.142         TCP      https(443) → 56115 [RST] Seq=648 Win=0 Len=0
+    838 18.797962      172.17.32.142         106.122.254.22        TCP      56116 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663704460 TSecr=0 SACK_PERM=1
+    839 18.816289      106.122.254.22        172.17.32.142         TCP      https(443) → 56116 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    840 18.816353      172.17.32.142         106.122.254.22        TCP      56116 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    841 18.817757      172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+    842 18.828424      106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    843 18.828475      172.17.32.142         106.122.254.22        TCP      56116 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+    844 18.829185      172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    845 18.835496      106.122.254.22        172.17.32.142         TCP      https(443) → 56116 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+    846 18.835538      172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+    847 18.856063      106.122.254.22        172.17.32.142         TCP      https(443) → 56116 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+    848 18.892980      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    849 18.893078      172.17.32.142         106.122.254.22        TCP      56116 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+    850 18.893941      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    851 18.894036      172.17.32.142         106.122.254.22        TCP      56116 → https(443) [ACK] Seq=711 Ack=613 Win=262016 Len=0
+    852 18.894115      106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+    853 18.894139      172.17.32.142         106.122.254.22        TCP      56116 → https(443) [ACK] Seq=711 Ack=644 Win=262112 Len=0
+    854 18.896519      106.122.254.22        172.17.32.142         TCP      https(443) → 56116 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+    855 18.896582      172.17.32.142         106.122.254.22        TCP      56116 → https(443) [ACK] Seq=711 Ack=645 Win=262144 Len=0
+    856 18.902526      172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    857 18.902956      172.17.32.142         106.122.254.22        TCP      56116 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+    858 18.918426      106.122.254.22        172.17.32.142         TCP      https(443) → 56116 [RST] Seq=645 Win=0 Len=0
+    859 19.208097      172.17.32.142         27.148.145.195        TCP      56117 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663704863 TSecr=0 SACK_PERM=1
+    860 19.224273      27.148.145.195        172.17.32.142         TCP      https(443) → 56117 [SYN, ACK] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    861 19.224368      172.17.32.142         27.148.145.195        TCP      56117 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    862 19.227329      172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+    863 19.236694      27.148.145.195        172.17.32.142         TCP      https(443) → 56117 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+    864 19.244347      27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    865 19.244427      172.17.32.142         27.148.145.195        TCP      56117 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+    866 19.245866      172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    867 19.300550      27.148.145.195        172.17.32.142         TCP      https(443) → 56117 [ACK] Seq=142 Ack=569 Win=15744 Len=0
+    868 19.300630      172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+    869 19.323945      27.148.145.195        172.17.32.142         TCP      https(443) → 56117 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+    870 19.357486      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    871 19.357577      172.17.32.142         27.148.145.195        TCP      56117 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+    872 19.357681      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    873 19.357738      172.17.32.142         27.148.145.195        TCP      56117 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+    874 19.357893      27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+    875 19.357937      172.17.32.142         27.148.145.195        TCP      56117 → https(443) [ACK] Seq=711 Ack=647 Win=262112 Len=0
+    876 19.359566      27.148.145.195        172.17.32.142         TCP      https(443) → 56117 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+    877 19.359629      172.17.32.142         27.148.145.195        TCP      56117 → https(443) [ACK] Seq=711 Ack=648 Win=262144 Len=0
+    878 19.365335      172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+    879 19.365843      172.17.32.142         27.148.145.195        TCP      56117 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+    880 19.373340      27.148.145.195        172.17.32.142         TCP      https(443) → 56117 [RST] Seq=648 Win=0 Len=0
+    881 19.380958      27.148.145.195        172.17.32.142         TCP      https(443) → 56117 [RST] Seq=648 Win=0 Len=0
+    882 19.670389      172.17.32.142         106.122.254.22        TCP      56119 → https(443) [SYN, ECN, CWR] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663705315 TSecr=0 SACK_PERM=1
+    883 19.686247      106.122.254.22        172.17.32.142         TCP      https(443) → 56119 [SYN, ACK, ECN] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    884 19.686366      172.17.32.142         106.122.254.22        TCP      56119 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    885 19.688882      172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+    886 19.762149      172.17.32.142         106.122.254.22        TCP      [TCP Retransmission] 56119 → https(443) [PSH, ACK] Seq=1 Ack=1 Win=262144 Len=517
+    887 19.938360      172.17.32.142         106.122.254.22        TCP      [TCP Retransmission] 56119 → https(443) [PSH, ACK] Seq=1 Ack=1 Win=262144 Len=517
+    888 19.960492      106.122.254.22        172.17.32.142         TCP      https(443) → 56119 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+    889 19.982924      106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    890 19.983004      172.17.32.142         106.122.254.22        TCP      56119 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+    891 19.984464      172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    892 19.998789      106.122.254.22        172.17.32.142         TLSv1.2  [TCP Spurious Retransmission] , Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    893 19.998832      172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+    894 20.030851      106.122.254.22        172.17.32.142         TCP      https(443) → 56119 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+    895 20.078192      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    896 20.078264      172.17.32.142         106.122.254.22        TCP      56119 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+    897 20.079740      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    898 20.079804      172.17.32.142         106.122.254.22        TCP      56119 → https(443) [ACK] Seq=711 Ack=613 Win=262016 Len=0
+    899 20.083175      106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+    900 20.083255      172.17.32.142         106.122.254.22        TCP      56119 → https(443) [ACK] Seq=711 Ack=644 Win=262112 Len=0
+    901 20.087695      106.122.254.22        172.17.32.142         TCP      https(443) → 56119 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+    902 20.087772      172.17.32.142         106.122.254.22        TCP      56119 → https(443) [ACK] Seq=711 Ack=645 Win=262144 Len=0
+    903 20.090347      172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    904 20.091395      172.17.32.142         106.122.254.22        TCP      56119 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+    905 20.106919      106.122.254.22        172.17.32.142         TCP      https(443) → 56119 [RST] Seq=645 Win=0 Len=0
+    906 20.109371      106.122.254.22        172.17.32.142         TCP      https(443) → 56119 [RST] Seq=645 Win=0 Len=0
+    907 20.396748      172.17.32.142         27.148.145.195        TCP      56120 → https(443) [SYN, ECN, CWR] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663706031 TSecr=0 SACK_PERM=1
+    908 20.414639      27.148.145.195        172.17.32.142         TCP      https(443) → 56120 [SYN, ACK, ECN] Seq=0 Ack=1 Win=14600 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    909 20.414752      172.17.32.142         27.148.145.195        TCP      56120 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    910 20.417362      172.17.32.142         27.148.145.195        TLSv1.2  Client Hello
+    911 20.433329      27.148.145.195        172.17.32.142         TCP      https(443) → 56120 [ACK] Seq=1 Ack=518 Win=15744 Len=0
+    912 20.436001      27.148.145.195        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    913 20.436080      172.17.32.142         27.148.145.195        TCP      56120 → https(443) [ACK] Seq=518 Ack=142 Win=261984 Len=0
+    914 20.437344      172.17.32.142         27.148.145.195        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    915 20.497258      27.148.145.195        172.17.32.142         TCP      https(443) → 56120 [ACK] Seq=142 Ack=569 Win=15744 Len=0
+    916 20.497337      172.17.32.142         27.148.145.195        TLSv1.2  Application Data
+    917 20.514617      27.148.145.195        172.17.32.142         TCP      https(443) → 56120 [ACK] Seq=142 Ack=711 Win=16768 Len=0
+    918 20.556487      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    919 20.556551      172.17.32.142         27.148.145.195        TCP      56120 → https(443) [ACK] Seq=711 Ack=515 Win=261760 Len=0
+    920 20.558265      27.148.145.195        172.17.32.142         TLSv1.2  Application Data
+    921 20.558324      172.17.32.142         27.148.145.195        TCP      56120 → https(443) [ACK] Seq=711 Ack=616 Win=262016 Len=0
+    922 20.564552      27.148.145.195        172.17.32.142         TLSv1.2  Encrypted Alert
+    923 20.564621      172.17.32.142         27.148.145.195        TCP      56120 → https(443) [ACK] Seq=711 Ack=647 Win=262112 Len=0
+    924 20.565712      27.148.145.195        172.17.32.142         TCP      https(443) → 56120 [FIN, ACK] Seq=647 Ack=711 Win=16768 Len=0
+    925 20.565775      172.17.32.142         27.148.145.195        TCP      56120 → https(443) [ACK] Seq=711 Ack=648 Win=262144 Len=0
+    926 20.566679      172.17.32.142         27.148.145.195        TLSv1.2  Encrypted Alert
+    927 20.567176      172.17.32.142         27.148.145.195        TCP      56120 → https(443) [FIN, ACK] Seq=742 Ack=648 Win=262144 Len=0
+    928 20.578632      27.148.145.195        172.17.32.142         TCP      https(443) → 56120 [RST] Seq=648 Win=0 Len=0
+    929 20.580998      27.148.145.195        172.17.32.142         TCP      https(443) → 56120 [RST] Seq=648 Win=0 Len=0
+    930 20.871925      172.17.32.142         106.122.254.22        TCP      56121 → https(443) [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=32 TSval=663706498 TSecr=0 SACK_PERM=1
+    931 20.887858      106.122.254.22        172.17.32.142         TCP      https(443) → 56121 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1460 SACK_PERM=1 WS=128
+    932 20.887963      172.17.32.142         106.122.254.22        TCP      56121 → https(443) [ACK] Seq=1 Ack=1 Win=262144 Len=0
+    933 20.890124      172.17.32.142         106.122.254.22        TLSv1.2  Client Hello
+    934 20.898176      106.122.254.22        172.17.32.142         TLSv1.2  Server Hello, Change Cipher Spec, Encrypted Handshake Message
+    935 20.898263      172.17.32.142         106.122.254.22        TCP      56121 → https(443) [ACK] Seq=518 Ack=138 Win=261984 Len=0
+    936 20.899590      172.17.32.142         106.122.254.22        TLSv1.2  Change Cipher Spec, Hello Request, Hello Request
+    937 20.905981      106.122.254.22        172.17.32.142         TCP      https(443) → 56121 [ACK] Seq=1 Ack=518 Win=176768 Len=0
+    938 20.906029      172.17.32.142         106.122.254.22        TLSv1.2  Application Data
+    939 20.922371      106.122.254.22        172.17.32.142         TCP      https(443) → 56121 [ACK] Seq=138 Ack=711 Win=182528 Len=0
+    940 20.963387      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    941 20.963434      172.17.32.142         106.122.254.22        TCP      56121 → https(443) [ACK] Seq=711 Ack=512 Win=261760 Len=0
+    942 20.963917      106.122.254.22        172.17.32.142         TLSv1.2  Application Data
+    943 20.963959      172.17.32.142         106.122.254.22        TCP      56121 → https(443) [ACK] Seq=711 Ack=613 Win=262016 Len=0
+    944 20.970328      172.17.32.142         106.122.254.22        TLSv1.2  Encrypted Alert
+    945 20.970457      172.17.32.142         106.122.254.22        TCP      56121 → https(443) [FIN, ACK] Seq=742 Ack=613 Win=262144 Len=0
+    946 20.971226      106.122.254.22        172.17.32.142         TLSv1.2  Encrypted Alert
+    947 20.971293      172.17.32.142         106.122.254.22        TCP      [TCP Out-Of-Order] 56121 → https(443) [FIN, ACK] Seq=742 Ack=644 Win=262112 Len=0
+    948 20.972673      106.122.254.22        172.17.32.142         TCP      https(443) → 56121 [FIN, ACK] Seq=644 Ack=711 Win=182528 Len=0
+    949 20.972715      172.17.32.142         106.122.254.22        TCP      [TCP Out-Of-Order] 56121 → https(443) [FIN, ACK] Seq=742 Ack=645 Win=262144 Len=0
+    950 20.984628      106.122.254.22        172.17.32.142         TCP      https(443) → 56121 [RST] Seq=613 Win=0 Len=0
+    951 20.985009      106.122.254.22        172.17.32.142         TCP      https(443) → 56121 [RST] Seq=644 Win=0 Len=0
+    952 20.985559      106.122.254.22        172.17.32.142         TCP      https(443) → 56121 [RST] Seq=645 Win=0 Len=0
+    953 20.986443      106.122.254.22        172.17.32.142         TCP      https(443) → 56121 [RST] Seq=613 Win=0 Len=0
