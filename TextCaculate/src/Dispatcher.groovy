@@ -9,7 +9,7 @@ class Dispatcher {
         NetPackage pkg = new NetPackage(map)
         if (reqCurrent == null) {
             reqCurrent = new HttpsRequest()
-        } else if (reqCurrent.isFull) {
+        } else if (reqCurrent.isFIN) {
             def host = reqCurrent.ip_server
             add2HostRecord(host, reqCurrent)
 

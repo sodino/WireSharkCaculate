@@ -1,11 +1,9 @@
-import java.text.DecimalFormat
-
 /**
  * Created by sodino on 2017/5/26.
  */
 class HttpsRequest {
     def map = [:]
-    def isFull = false
+    def isFIN = false
     def isOCSP = false
     def line_number // tcp1 line number
     def isSessionResumption = false
@@ -13,12 +11,12 @@ class HttpsRequest {
     def ip_server = ''
 
     def add(NetPackage pkg){
-        if (isFull) {
+        if (isFIN) {
             return false
         }
 
         def key = Constant.Handshake.TCP_1
-        def isTcp1 = pkg.isTCP(1)
+        def isTcp1 = pkg.isTCP(Constant.TCP.TCP_1)
 
         if (map[key] == null) {
             if (isTcp1 == false) {
@@ -42,12 +40,17 @@ class HttpsRequest {
 
 
         key = Constant.Handshake.TCP_2
-        if (pkg.isTCP(2) && map[key] == null) {
+        if (pkg.isTCP(Constant.TCP.TCP_2) && map[key] == null) {
             map.put(key, pkg)
         }
 
         key = Constant.Handshake.TCP_3
-        if (pkg.isTCP(3) && map[key] == null) {
+        if (pkg.isTCP(Constant.TCP.TCP_3) && map[key] == null) {
+            map.put(key, pkg)
+        }
+
+        key = Constant.Handshake.FIN
+        if (pkg.isTCP(Constant.TCP.FIN) && map[key] == null) {
             map.put(key, pkg)
         }
 
@@ -97,11 +100,9 @@ class HttpsRequest {
         if (pkg.isChangeCipherSpec()) {
             if (isFromClient(pkg)) {
                 key = Constant.Handshake.Change_Cipher_Spec_c
+                map.put(key, pkg)
             } else if (isFromServer(pkg)) {
                 key = Constant.Handshake.Change_Cipher_Spec_s
-            }
-
-            if (map[key] == null) {
                 map.put(key, pkg)
             }
         }
@@ -109,17 +110,16 @@ class HttpsRequest {
         if (pkg.isApplicateionData()) {
             if (isFromClient(pkg)) {
                 key = Constant.Handshake.Applicateion_Data_c
+                map.put(key, pkg)
             } else if (isFromServer(pkg)) {
                 key = Constant.Handshake.Applicateion_Data_s
-            }
-            if (map[key] == null) {
                 map.put(key, pkg)
             }
         }
 
 
-        if (map[Constant.Handshake.Applicateion_Data_s] != null){
-            isFull = true
+        if (map[Constant.Handshake.FIN] != null){
+            isFIN = true
         }
 
 
@@ -147,8 +147,8 @@ class HttpsRequest {
         }
     }
 
-    def isFull() {
-        isFull
+    def isFIN() {
+        isFIN
     }
 
     def isOCSP() {
@@ -176,11 +176,15 @@ class HttpsRequest {
                 return
             } else if (Constant.Handshake.All.equals(step)) {
 
-                def all = (map[Constant.Handshake.Applicateion_Data_s].getTime() - map[Constant.Handshake.TCP_1].getTime()) * 1000
+                if (map[Constant.Handshake.Applicateion_Data_s] != null) {
+                    def all = (map[Constant.Handshake.Applicateion_Data_s].getTime() - map[Constant.Handshake.TCP_1].getTime()) * 1000
 
-                sumTime.add(step, all)
+                    sumTime.add(step, all)
 
-                print format.format(all)
+                    print format.format(all)
+                } else {
+                    print 'x.xxx'
+                }
                 print '\t'
                 return
             }
@@ -194,6 +198,9 @@ class HttpsRequest {
                 def tSuf = suf.getTime()
                 def tPre = pre.getTime()
                 value = (tSuf - tPre) * 1000
+
+                // ocsp开启Session Resumption后，Client Cipher Spec会先Server 后 Client导致负数
+                value = Math.abs(value)
 
                 sumTime.add(step, value)
 

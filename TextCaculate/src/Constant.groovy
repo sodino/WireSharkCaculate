@@ -6,6 +6,7 @@ import java.text.DecimalFormat
 class Constant {
     static final String NO = 'No.'
     static final String TIME = 'Time'
+    static final String LENGTH = 'Length'
     static final String SOURCE = 'Source'
     static final String DESTINATION = 'Destination'
     static final String PROTOCOL = 'Protocol'
@@ -33,6 +34,8 @@ class Constant {
 //        public static final String Encrypted_Handshake_Message = 'Encrypted Handshake Message'
         public static final String Applicateion_Data = 'Application Data'
 
+        public static final String FIN = 'FIN'
+
 
         public static final String Change_Cipher_Spec_c = 'Change Cipher Spec from client'
         public static final String Change_Cipher_Spec_s = 'Change Cipher Spec from server'
@@ -46,5 +49,14 @@ class Constant {
         public static final def TCP_1 = /\[SYN(.*)\] Seq=0/
         public static final def TCP_2 = /\[SYN(.*)ACK(.*)\] Seq=0 Ack=1/
         public static final def TCP_3 = /\[(.*)ACK(.*)\] Seq=1 Ack=1/
+        public static final def FIN = /\[FIN(.*)\]/
+    }
+
+    class TCP {
+        public static final int TCP_1 = 1
+        public static final int TCP_2 = 2
+        public static final int TCP_3 = 3
+
+        public static final int FIN = Integer.MAX_VALUE
     }
 }
