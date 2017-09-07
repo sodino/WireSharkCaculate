@@ -36,7 +36,8 @@ class SumTime {
         def format = Constant.Data_Format
 
         println '----- ----- ----- ----- ----- ----- -----'
-        print 'avg\t\t0.000\t'
+        print 'avg'
+        print String.format(Constant.FORMAT_STRING, 0.000)
 
         arrStep.each {step->
             if (Constant.Handshake.TCP_1.equals(step)) {
@@ -46,10 +47,10 @@ class SumTime {
             def sum = mapSum[step]
             def count = mapCount[step]
             if (sum == null || count == null || count == 0) {
-                print 'x.xxx\t'
+                print String.format(Constant.FORMAT_STRING, 'x.xxx')
             } else {
                 def value = format.format(sum / count)
-                print value + '\t'
+                print String.format(Constant.FORMAT_STRING, value)
             }
         }
         println ''

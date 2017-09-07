@@ -1,6 +1,8 @@
 //def logName = '100.ocsp.05.25.14.48.txt'
 //def logName = 'https.1000x2.normal.and.ocsp.host.api.meipai.com.txt'
-def logName = '2000x2.05.27.17.14.txt'
+//def logName = '2000x2.05.27.17.14.txt'
+def logName = 'https.http2.mixed.h2.01.txt'
+//def logName = 'https.http2.mixed.https.01.txt'
 def baseDir = "./../res/"
 
 

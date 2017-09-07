@@ -47,7 +47,7 @@ class NetPackage {
 
     def isServerHello() {
         def info = map[Constant.INFO]
-        if (info.equals(Constant.Handshake.Server_Hello)) {
+        if (info.contains(Constant.Handshake.Server_Hello)) {
             true
         } else {
             false

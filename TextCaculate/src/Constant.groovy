@@ -11,7 +11,10 @@ class Constant {
     static final String DESTINATION = 'Destination'
     static final String PROTOCOL = 'Protocol'
     static final String INFO = 'Info'
-    static def Data_Format = new DecimalFormat('0.000')
+    static final String FORMAT_INT = "% 5d"
+    static final String FORMAT_FLOAT = "% 5f"
+    static final String FORMAT_STRING = "%11s"
+    static def Data_Format = new DecimalFormat('0.00000')
 
     class Protocol {
         public static final String TCP = 'TCP'

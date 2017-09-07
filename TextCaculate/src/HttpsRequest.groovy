@@ -167,8 +167,8 @@ class HttpsRequest {
         def pre = map[Constant.Handshake.TCP_1]
         def suf
 
-        print line_number + '\t' // No.
-        print '0.000' + '\t' // tcp1
+        print String.format(Constant.FORMAT_INT, line_number) // No.
+        print String.format(Constant.FORMAT_STRING, '0.000')  // tcp1
 
         // tcp2 ... ...
         arrStep.forEach{ step ->
@@ -181,19 +181,21 @@ class HttpsRequest {
 
                     sumTime.add(step, all)
 
-                    print format.format(all)
+//                    print format.format(all)
+//                    print String.format(Constant.FORMAT_FLOAT, all)
+                    print String.format(Constant.FORMAT_STRING, format.format(all))
                 } else {
                     print 'x.xxx'
                 }
-                print '\t'
+//                print '\t'
                 return
             }
             suf = map[step]
 
             if (suf == null) {
-                print 'x.xxx'
+                print String.format(Constant.FORMAT_STRING, 'x.xxx')
             } else if (suf == pre) {
-                print '<---'
+                print String.format(Constant.FORMAT_STRING, '<---')
             } else {
                 def tSuf = suf.getTime()
                 def tPre = pre.getTime()
@@ -204,9 +206,10 @@ class HttpsRequest {
 
                 sumTime.add(step, value)
 
-                print format.format(value)
+//                print format.format(value)
+//                print String.format(Constant.FORMAT_FLOAT, value)
+                print String.format(Constant.FORMAT_STRING, format.format(value))
             }
-            print '\t'
 
             pre = (suf == null ? pre : suf)
         }
