@@ -39,6 +39,8 @@ class Constant {
 
         public static final String FIN = 'FIN'
 
+        public static final String RST = 'RST'
+
 
         public static final String Change_Cipher_Spec_c = 'Change Cipher Spec from client'
         public static final String Change_Cipher_Spec_s = 'Change Cipher Spec from server'
@@ -53,6 +55,7 @@ class Constant {
         public static final def TCP_2 = /\[SYN(.*)ACK(.*)\] Seq=0 Ack=1/
         public static final def TCP_3 = /\[(.*)ACK(.*)\] Seq=1 Ack=1/
         public static final def FIN = /\[FIN(.*)\]/
+        public static final def RST = /\[RST(.*)\]/
     }
 
     class TCP {
@@ -60,6 +63,7 @@ class Constant {
         public static final int TCP_2 = 2
         public static final int TCP_3 = 3
 
+        public static final int RST = Integer.MAX_VALUE -1
         public static final int FIN = Integer.MAX_VALUE
     }
 }

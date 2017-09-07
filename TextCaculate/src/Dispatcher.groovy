@@ -9,7 +9,7 @@ class Dispatcher {
         NetPackage pkg = new NetPackage(map)
         if (reqCurrent == null) {
             reqCurrent = new HttpsRequest()
-        } else if (reqCurrent.isFIN) {
+        } else if (reqCurrent.isFIN || reqCurrent.isRST) {
             def host = reqCurrent.ip_server
             add2HostRecord(host, reqCurrent)
 
@@ -43,7 +43,8 @@ class Dispatcher {
 
     def printRequestArray(ArrayList<HttpsRequest> arr) {
 //        println 'No.\t\tTCP1\tTCP2\tTCP3\tC_H\t\tS_H\t\tCer\t\tC_S\t\tSKE\t\tSHD\t\tCKE\t\tCC_c\tNST\t\tCC_s\tAD_c\tAD_s\tAll '
-        print "NO."
+        print String.format(Constant.FORMAT_STRING, "Idx")
+        print String.format(Constant.FORMAT_STRING, "NO.")
         print String.format(Constant.FORMAT_STRING, "TCP1")
         print String.format(Constant.FORMAT_STRING, "TCP2")
         print String.format(Constant.FORMAT_STRING, "TCP3")
@@ -82,8 +83,10 @@ class Dispatcher {
 
         def sumTime = new SumTime()
 
+        def index = 0
         arr.forEach{ req ->
-            req.printData(arrStep, sumTime)
+            req.printData(index, arrStep, sumTime)
+            index ++
         }
 
         sumTime.printAverage(arrStep)

@@ -118,7 +118,7 @@ class NetPackage {
     def isNewSessionTicket() {
         def info = map[Constant.INFO]
         if (info.contains(Constant.Handshake.New_Session_Ticket)) {
-            println "${number} new session ticket true"
+//            println "${number} new session ticket true"
             true
         } else {
             false
@@ -158,18 +158,21 @@ class NetPackage {
             switch(step){
                 case Constant.TCP.TCP_1:
                     pattern = Constant.Pattern.TCP_1
-                    break;
+                    break
                 case Constant.TCP.TCP_2:
                     pattern = Constant.Pattern.TCP_2
-                    break;
+                    break
                 case Constant.TCP.TCP_3:
                     pattern = Constant.Pattern.TCP_3
-                    break;
+                    break
                 case Constant.TCP.FIN:
                     pattern = Constant.Pattern.FIN
-                    break;
+                    break
+                case Constant.TCP.RST:
+                    pattern = Constant.Pattern.RST
+                    break
                 default:
-                    break;
+                    break
             }
 
             if (pattern != null) {

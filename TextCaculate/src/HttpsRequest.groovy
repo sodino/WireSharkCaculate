@@ -4,6 +4,7 @@
 class HttpsRequest {
     def map = [:]
     def isFIN = false
+    def isRST = false
     def isOCSP = false
     def line_number // tcp1 line number
     def isSessionResumption = false
@@ -51,6 +52,11 @@ class HttpsRequest {
 
         key = Constant.Handshake.FIN
         if (pkg.isTCP(Constant.TCP.FIN) && map[key] == null) {
+            map.put(key, pkg)
+        }
+
+        key = Constant.Handshake.RST
+        if (pkg.isTCP(Constant.TCP.RST) && map[key] == null) {
             map.put(key, pkg)
         }
 
@@ -118,10 +124,13 @@ class HttpsRequest {
         }
 
 
-        if (map[Constant.Handshake.FIN] != null){
+        if (map[Constant.Handshake.FIN]){
             isFIN = true
         }
 
+        if (map[Constant.Handshake.RST]) {
+            isRST = true
+        }
 
         def size = map.size()
         if (size > preSize) {
@@ -147,6 +156,10 @@ class HttpsRequest {
         }
     }
 
+    def isRST() {
+        isRST
+    }
+
     def isFIN() {
         isFIN
     }
@@ -159,7 +172,7 @@ class HttpsRequest {
         isSessionResumption
     }
 
-    def printData(ArrayList<String> arrStep, SumTime sumTime) {
+    def printData(int index, ArrayList<String> arrStep, SumTime sumTime) {
 
         def format = Constant.Data_Format
 
@@ -167,7 +180,8 @@ class HttpsRequest {
         def pre = map[Constant.Handshake.TCP_1]
         def suf
 
-        print String.format(Constant.FORMAT_INT, line_number) // No.
+        print String.format(Constant.FORMAT_STRING, index)    // index
+        print String.format(Constant.FORMAT_STRING, line_number) // No.
         print String.format(Constant.FORMAT_STRING, '0.000')  // tcp1
 
         // tcp2 ... ...
@@ -215,7 +229,5 @@ class HttpsRequest {
         }
 
         println ''
-
-
     }
 }
